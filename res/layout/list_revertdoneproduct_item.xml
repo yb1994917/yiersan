@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="78.0dip" android:layout_marginTop="24.0dip" android:layout_marginBottom="16.0dip">
+        <ImageView android:id="@id/ivProduct" android:layout_width="62.0dip" android:layout_height="78.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/ivProduct">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_gray" android:ellipsize="end" android:id="@id/tvProductName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_gray" android:ellipsize="end" android:id="@id/tvBrandName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/tvProductName" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="#33000000" android:ellipsize="end" android:id="@id/tvSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <ImageView android:id="@id/ivPS" android:background="@mipmap/ps_tag" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="21.0dip" android:layout_marginLeft="4.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yiersan.widget.refresh.vertical.PMRefreshLayout android:id="@id/pmrlHomeGroupPage" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yiersan.widget.LoadMoreRecycleView android:id="@id/rvHomeGroupPage" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.yiersan.widget.refresh.vertical.PMRefreshLayout>
+</LinearLayout>

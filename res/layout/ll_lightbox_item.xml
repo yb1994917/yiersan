@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="293.0dip" android:layout_height="366.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yiersan.widget.imagetag.SuperTagImageView android:id="@id/tagPicture" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout="@layout/image_layout" app:imageScaleType="centerCrop" app:tagPadding="10.0dip" />
+</LinearLayout>

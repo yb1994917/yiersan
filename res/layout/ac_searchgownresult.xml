@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llSize" android:layout_width="fill_parent" android:layout_height="47.0dip">
+        <android.support.v7.widget.RecyclerView android:id="@id/rvSize" android:layout_width="fill_parent" android:layout_height="46.0dip" />
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yiersan.widget.refresh.vertical.PMRefreshLayout android:id="@id/srlProduct" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yiersan.widget.LoadMoreRecycleView android:id="@id/rvProduct" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.yiersan.widget.refresh.vertical.PMRefreshLayout>
+        <RelativeLayout android:id="@id/rlSearchEmpty" android:background="#fffafafa" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/ivEmptyTag" android:background="@mipmap/search_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="93.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_color_light" android:id="@id/tvEmptyTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/yies_searchproductresult_empty" android:layout_below="@id/ivEmptyTag" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ivBack" android:background="@mipmap/top" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="27.0dip" android:layout_marginBottom="17.0dip" />
+        <com.yiersan.widget.LoadingView android:layout_gravity="center" android:id="@id/lvWait" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="68.0dip" android:layout_height="68.0dip">
+        <ImageView android:id="@id/ivBrand" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/colorWhite" android:id="@id/tvBrandNew" android:background="@drawable/invite_hot_shape" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NEW" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_light" android:layout_gravity="center_horizontal" android:id="@id/tvBrandAdd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="4.0dip" android:text="@string/yies_wish_brand_add" />
+</LinearLayout>

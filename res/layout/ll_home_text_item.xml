@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="57.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yiersan.widget.UbuntuTextView android:textSize="28.0sp" android:textColor="@color/text_color_deep" android:ellipsize="end" android:gravity="bottom" android:id="@id/tvHomeWelcome" android:layout_width="fill_parent" android:layout_height="57.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:maxLines="1" />
+</RelativeLayout>

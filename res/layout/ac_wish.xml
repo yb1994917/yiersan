@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <RelativeLayout android:id="@id/rlWishClose" android:layout_width="54.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/arrow_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llWishSelect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorBlack" android:id="@id/tvWishSelectTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_wish_all" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_gray" android:id="@id/tvWishSelect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_wish_wish_on" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/ivWishArrow" android:background="@mipmap/select_sanjiao_n" android:layout_width="6.0dip" android:layout_height="4.0dip" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/tvFrame" android:layout_centerVertical="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rlSuitcase" android:layout_width="38.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/ivSuitcase" android:background="@mipmap/new_suitcase" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rlSizeDefault" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_light" android:id="@id/tvSizeDefault" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/yies_wish_size_default" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="#33000000" android:id="@id/tvSizeDefaultNull" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/yies_wish_size_null" android:layout_toLeftOf="@id/ivSizeArrow" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/ivSizeArrow" android:background="@mipmap/buy_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <com.yiersan.widget.switchbutton.SwitchButton android:id="@id/sbSizeDefault" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:kswThumbDrawable="@drawable/buy_thumb_drawable_select" app:kswBackDrawable="@drawable/wish_size_drawable_select" app:kswBackMeasureRatio="2.0" style="@style/SwitchButtonStyle" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+            <android.support.v7.widget.RecyclerView android:id="@id/rvWishType" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+            <View android:id="@id/viewWishType" android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.yiersan.widget.refresh.vertical.PMRefreshLayout android:id="@id/pmrlWish" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.yiersan.widget.LoadMoreRecycleView android:id="@id/rvWish" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </com.yiersan.widget.refresh.vertical.PMRefreshLayout>
+                <RelativeLayout android:id="@id/rlWishEmpty" android:background="@mipmap/empty_wish" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_deep" android:id="@id/tvEmptyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="@string/yies_wish_empty_title" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:gravity="center" android:id="@id/tvEmptyTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/yies_wish_empty_tip" android:layout_below="@id/tvEmptyTitle" android:layout_centerHorizontal="true" />
+                    <Button android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:id="@id/btnGo" android:background="@drawable/btn_productdetail_buy_shape" android:layout_width="172.0dip" android:layout_height="44.0dip" android:layout_marginTop="30.0dip" android:text="@string/yies_wish_empty_buy" android:layout_below="@id/tvEmptyTip" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rlFilterWishEmpty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/ivEmpty" android:background="@mipmap/filter_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/yies_wish_filter_empty" android:layout_below="@id/ivEmpty" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llOutSide" android:background="#11000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:id="@id/llWish" android:background="@color/colorWhite" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@id/lvWish" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+        </LinearLayout>
+        <com.yiersan.widget.LoadingView android:layout_gravity="center" android:id="@id/lvWishLoading" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </FrameLayout>
+</LinearLayout>

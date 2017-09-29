@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/llFoot" android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/x_list_view_footer_progress_bar" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivWait" android:background="@mipmap/jiazai" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/x_list_view_footer_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="正在加载更多..." />
+    </RelativeLayout>
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

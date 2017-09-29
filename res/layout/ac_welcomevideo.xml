@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:id="@id/vfWelcome" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@anim/slide_right_in" android:outAnimation="@anim/slide_left_out"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextureView android:id="@id/tvContent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/ivNext" android:background="@mipmap/welcome_next" android:layout_width="84.0dip" android:layout_height="84.0dip" android:layout_marginBottom="42.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@mipmap/welcome_app" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:id="@id/btnWelcome" android:background="@drawable/btn_box_main" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" android:layout_marginBottom="16.0dip" android:text="@string/yies_welcomevideo_welcome" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</ViewFlipper>

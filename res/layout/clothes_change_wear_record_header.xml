@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="91.0dip">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_black" android:id="@id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_total_wear" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="26.0sp" android:textColor="@color/text_black" android:id="@id/total_wear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_below="@id/tv1" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:layout_gravity="center_vertical" android:background="#ffe5e5e5" android:layout_width="1.0dip" android:layout_height="55.0dip" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:id="@id/tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_total_price" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="26.0sp" android:textColor="@color/text_black" android:id="@id/total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0" android:layout_below="@id/tv2" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/empty2" android:background="@color/common_bg_light" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/tvClothesRecord2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="116.0dip" android:src="@mipmap/hanger_record" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_light" android:id="@id/empty_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yier_no_record" android:layout_below="@id/tvClothesRecord2" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

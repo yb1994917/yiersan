@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llSmallDetail" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <ImageView android:id="@id/ivSmall" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tvBack" android:background="@drawable/textview_new_product_bg_shape" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="@string/yies_return" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:ellipsize="end" android:id="@id/tvBrand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="CTT" android:maxLines="1" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:ellipsize="end" android:id="@id/tvType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:ellipsize="end" android:id="@id/tvSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="S M" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

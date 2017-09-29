@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/collection_tutorial" android:background="@color/shadow" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/card_layout" android:background="@drawable/white_rounded_corner_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="32.0dip" android:minWidth="280.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/tutorial_img" android:layout_width="288.0dip" android:layout_height="384.0dip" android:layout_marginTop="8.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/btn_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_color_light" android:gravity="center" android:id="@id/cancel" android:background="@drawable/btn_white" android:layout_width="0.0dip" android:layout_height="36.0dip" android:text="@string/yies_continue_action" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:background="@color/text_color_light" android:layout_width="1.0dip" android:layout_height="12.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/pink_main" android:gravity="center" android:id="@id/confirm" android:background="@drawable/btn_white" android:layout_width="0.0dip" android:layout_height="36.0dip" android:text="@string/yies_yes" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

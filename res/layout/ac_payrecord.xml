@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/colorWhite" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <RelativeLayout android:id="@id/rlClose" android:layout_width="38.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/arrow_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/lvPayRecord" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llPayRecordEmpty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="109.0dip">
+            <com.yiersan.widget.UbuntuTextView android:textSize="28.0sp" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yies_payrecord_en" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/yies_payrecord" />
+        </LinearLayout>
+        <RelativeLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/ivEmpty" android:background="@mipmap/pay_record_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/yies_empty_payrecord_zn" android:layout_below="@id/ivEmpty" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

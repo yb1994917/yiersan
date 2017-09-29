@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlGuideContent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llGuideTag" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ivGuideTag" android:background="@mipmap/wish_guide_two" android:layout_width="wrap_content" android:layout_height="40.0dip" />
+                <RelativeLayout android:id="@id/rlWishGuideBG" android:background="#33ffffff" android:layout_width="170.0dip" android:layout_height="225.0dip" android:layout_marginTop="10.0dip">
+                    <ImageView android:background="@mipmap/tap_instruction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:layout_width="fill_parent" android:layout_height="45.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/tvWishGuideKnow" android:background="@drawable/wishknow_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/yies_know" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

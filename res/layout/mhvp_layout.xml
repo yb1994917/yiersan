@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/mhvp_rootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yiersan.widget.mhvp.ScrollableViewPager android:id="@id/mhvp_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yiersan.widget.mhvp.layout.TranslatableLinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/mhvp_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.yiersan.widget.mhvp.layout.SizeSensitiveLinearLayout android:orientation="vertical" android:id="@id/mhvp_headerCustom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.yiersan.widget.mhvp.layout.TranslatableLinearLayout>
+</merge>

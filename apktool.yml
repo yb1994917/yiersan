@@ -1,0 +1,26 @@
+version: 2.0.2-SNAPSHOT
+apkFileName: com.yiersan_2.6.0_75.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '17'
+  targetSdkVersion: '23'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '75'
+  versionName: 2.6.0
+sharedLibrary: false
+unknownFiles:
+  publicsuffixes.gz: '8'
+  orgxn/fusesource/hawtdispatch/BaseRetained.CALLERS: '8'
+  META-INF/MANIFEST.MF: '8'
+  META-INF/jdom-info.xml: '8'
+  META-INF/rxjava.properties: '8'
+DecodeFileMaps:
+  res/drawable-xxhdpi-v4/ah8.9.png: res/drawable-xxhdpi-v4/ah8.png
+  res/mipmap-xxhdpi-v4/mq_conversation_edit_bg.9.png: res/mipmap-xxhdpi-v4/mq_conversation_edit_bg.png
+DexMaps:
+  classes2.dex: smali_classes2

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:id="@id/tvServerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务器(测试服)" android:layout_centerVertical="true" />
+                <com.yiersan.widget.switchbutton.SwitchButton android:id="@id/sbServerStateChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前版本号" android:layout_centerVertical="true" />
+                <TextView android:id="@id/tvVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户登录状态" android:layout_centerVertical="true" />
+                <TextView android:id="@id/tvUserLoginState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未登录" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:id="@id/rlJPushState" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推送服务状态" android:layout_centerVertical="true" />
+                <TextView android:id="@id/tvJPushState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未连接" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:id="@id/rlUid" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Uid" android:layout_alignTop="@id/tvUid" android:layout_alignParentStart="true" />
+                <TextView android:ellipsize="end" android:id="@id/tvUid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:id="@id/rlToken" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Token" android:layout_alignBaseline="@id/tvToken" android:layout_alignBottom="@id/tvToken" android:layout_alignParentStart="true" />
+                <TextView android:ellipsize="end" android:id="@id/tvToken" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="" android:maxLines="1" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:id="@id/rlUToken" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UToken" android:layout_centerVertical="true" />
+                <TextView android:ellipsize="end" android:id="@id/tvUToken" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="" android:maxLines="1" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:id="@id/rlDeviceId" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DeviceId" android:layout_centerVertical="true" />
+                <TextView android:ellipsize="end" android:id="@id/tvDeviceId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="" android:maxLines="1" android:layout_alignTop="@id/textView" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:id="@id/rlTinkerId" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TinkerId" android:layout_centerVertical="true" />
+                <TextView android:ellipsize="end" android:id="@id/tvTinkerId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Patch Version" android:layout_centerVertical="true" />
+                <TextView android:id="@id/tvPatchVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Package Time" android:layout_centerVertical="true" />
+                <TextView android:id="@id/tvPackageTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2017-2-2 14:23" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:id="@id/rlJPushId" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JPush Id" android:layout_centerVertical="true" />
+                <TextView android:ellipsize="end" android:id="@id/tvJPushId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="5.0dip" android:src="@mipmap/welcome_logo" android:alpha="0.5" />
+    </LinearLayout>
+</ScrollView>

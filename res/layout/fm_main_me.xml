@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/colorWhite" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/flContent" android:paddingBottom="@dimen/card_view_main_height" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rlProfileBgView" android:background="@mipmap/icon_me_bg_red" android:layout_width="fill_parent" android:layout_height="267.0dip">
+                <ImageView android:id="@id/ivNotificationCenter" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.5dip" android:layout_marginRight="24.0dip" android:src="@mipmap/icon_notification_center" android:layout_alignParentRight="true" />
+                <ImageView android:id="@id/ivBadgeView" android:background="@mipmap/dress_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-34.0dip" android:layout_toRightOf="@id/ivNotificationCenter" android:layout_alignTop="@id/ivNotificationCenter" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/llDaysContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="2.0dip" android:layout_above="@id/llMemberTag">
+                    <RelativeLayout android:layout_width="64.0dip" android:layout_height="64.0dip">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivUserPhoto" android:background="@mipmap/avatar" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+                        <com.yiersan.widget.CircleImageView android:id="@id/civLevel" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="2.5dip" android:src="@mipmap/ygirl_big" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.5dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/colorWhite" android:id="@id/tvMemberName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:id="@id/tvLoginPlease" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/yies_me_no_login_name" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llMemberInfo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                            <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@mipmap/icon_me_star" />
+                            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:id="@id/tvMemberLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/yies_me_card_two" android:maxLines="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/llMemberTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:layout_marginBottom="14.0dip">
+                        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="24.0sp" android:textColor="@color/colorWhite" android:id="@id/tvMemberTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="112" android:maxLines="1" />
+                            <TextView android:textSize="7.0sp" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="天" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:id="@id/tvMemberTimeTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_member_time_remain" android:maxLines="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="bottom" android:id="@id/ivFreezeArrow" android:background="@mipmap/me_setting_white_arrow" android:layout_width="4.399994dip" android:layout_height="9.099976dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="17.5dip" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/llMemberTag" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="100.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="78.0dip" android:layout_alignParentBottom="true">
+                    <Button android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:id="@id/btnMember" android:background="@drawable/btn_member_shape" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/yies_me_login" android:layout_weight="1.0" style="?android:attr/borderlessButtonStyle" />
+                    <RelativeLayout android:id="@id/rlMemberStop" android:background="@drawable/member_stop_selector" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_weight="1.0">
+                        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:background="@mipmap/pause" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/yies_me_stop" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.yiersan.widget.BubbleTextView android:textSize="12.0sp" android:textColor="@color/colorWhite" android:gravity="right" android:id="@id/bubblePauseMember" android:paddingLeft="20.0dip" android:paddingTop="8.0dip" android:paddingRight="20.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15.0dip" android:layout_marginRight="10.0dip" android:text="@string/yies_me_pause_member" android:layout_below="@id/llDaysContainer" android:layout_alignParentRight="true" android:lineSpacingExtra="6.0dip" app:btv_arrow_margin="-25.0dip" app:btv_arrow_direction="up" app:btv_arrow_height="6.0dip" app:btv_arrow_angle_degree="45.0" app:btv_x_size="8.0dip" app:btv_x_margin="10.0dip" app:btv_x_stroke_width="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/llBanner" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llInvite" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="14.0sp" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_invite" />
+                                <TextView android:textSize="9.0sp" android:textColor="@color/colorWhite" android:id="@id/textView2" android:background="@drawable/invite_hot_shape" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HOT" />
+                            </LinearLayout>
+                            <TextView android:textSize="11.0sp" android:textColor="@color/colorWhite" android:ellipsize="end" android:id="@id/tvBonusText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/yies_bonus_default" android:lines="1" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/imageView" android:background="@mipmap/me_setting_white_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" />
+                    </LinearLayout>
+                    <View android:layout_gravity="center_vertical" android:background="#33ffffff" android:layout_width="0.5dip" android:layout_height="45.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llSpecialEvent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/tvSpecialEventTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_be_y_girl" />
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/text_size_11" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tvSpecialEventDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/yies_me_free_member_get" android:lines="1" />
+                        </LinearLayout>
+                        <ImageView android:background="@mipmap/me_setting_white_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llBannerNoYGirl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:text="@string/yies_me_invite" />
+                    <TextView android:textSize="9.0sp" android:textColor="@color/colorWhite" android:background="@drawable/invite_hot_shape" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="HOT" />
+                    <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="#ccffffff" android:ellipsize="end" android:gravity="end" android:id="@id/tvBonusText2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_bonus_default" android:lines="1" />
+                    <ImageView android:background="@mipmap/me_setting_white_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="25.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/common_bg_light" android:layout_width="fill_parent" android:layout_height="11.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="23.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_suit_case" />
+                <com.yiersan.widget.UbuntuTextView android:textSize="10.0sp" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/yies_me_suit_case_en" app:textFont="1" />
+                <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/text_light" android:id="@id/tvClothesRecord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_clotheschangerecord" android:drawableRight="@mipmap/icon_me_grey_arrow" android:drawablePadding="3.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                <RelativeLayout android:id="@id/rlSuitCase" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_all_suit_case" android:drawableTop="@mipmap/icon_me_suit_case" android:drawablePadding="2.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rlGoodReceive" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:id="@id/tvGoodReceive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_good_receive" android:drawableTop="@mipmap/icon_me_good_receive" android:drawablePadding="2.0dip" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tvIconGoodReceive" android:background="@drawable/red_circle_shape" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="-12.0dip" android:layout_marginTop="3.0dip" android:layout_toRightOf="@id/tvGoodReceive" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rlGoodReturn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:id="@id/tvGoodReturn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_good_return" android:drawableTop="@mipmap/icon_me_good_return" android:drawablePadding="2.0dip" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tvIconGoodReturn" android:background="@drawable/red_circle_shape" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="-12.0dip" android:layout_marginTop="3.0dip" android:layout_toRightOf="@id/tvGoodReturn" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rlGownOrder" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yier_gown_history" android:drawableTop="@mipmap/icon_me_gown_order" android:drawablePadding="2.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/common_bg_light" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="23.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_my_wallet" />
+                <com.yiersan.widget.UbuntuTextView android:textSize="10.0sp" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/yies_me_my_wallet_en" app:textFont="1" />
+                <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/text_light" android:id="@id/tvPayRecord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_payrecord" android:drawableRight="@mipmap/icon_me_grey_arrow" android:drawablePadding="3.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip">
+                <RelativeLayout android:id="@id/rlCoupon" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_coupon2" android:drawableTop="@mipmap/icon_me_coupon" android:drawablePadding="2.0dip" />
+                        <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/tvCouponText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rlCashPledge" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_my_deposit" android:drawableTop="@mipmap/icon_me_cash_pledge" android:drawablePadding="2.0dip" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/text_color_light" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_can_return_deposit" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rlGainPoint" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_reward_center" android:drawableTop="@mipmap/icon_me_award" android:drawablePadding="2.0dip" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/text_color_light" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_get_coupon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rlPointShop" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_member_center" android:drawableTop="@mipmap/icon_me_shop_center" android:drawablePadding="2.0dip" />
+                        <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/tvPoint" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/common_bg_light" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip">
+                <RelativeLayout android:id="@id/rlSize" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_size" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="#ffcc9e68" android:id="@id/tvSizePlease" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/yies_me_size_please" android:layout_toLeftOf="@id/ivSize" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/ivSize" android:background="@mipmap/me_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/rlAddress" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_address" android:layout_centerVertical="true" />
+                    <ImageView android:background="@mipmap/me_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/rlQuestion" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_question" android:layout_centerVertical="true" />
+                    <ImageView android:background="@mipmap/me_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/rlFeedback" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_complaints_suggestions" android:layout_centerVertical="true" />
+                    <ImageView android:background="@mipmap/me_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/rlService" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_contact_service" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="#ffcc9e68" android:id="@id/tvServiceUnReadCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/yies_me_have_unread_message" android:layout_toLeftOf="@id/ivServiceSize" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/ivServiceSize" android:background="@mipmap/me_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/common_bg_light" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <RelativeLayout android:id="@id/rlSetting" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip">
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_setting" android:layout_centerVertical="true" />
+                <ImageView android:background="@mipmap/me_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/common_bg_light" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <RelativeLayout android:id="@id/rlServicePhone" android:background="@color/common_bg_light" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="#39000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_service" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

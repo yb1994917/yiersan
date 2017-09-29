@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="114.0dip">
+        <ImageView android:id="@id/ivRelationPhoto" android:layout_width="90.0dip" android:layout_height="114.0dip" />
+        <RelativeLayout android:id="@id/rlRelationXian" android:layout_width="20.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/relation_xian" android:layout_width="8.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

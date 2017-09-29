@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginLeft="11.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llSearch" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/ivSearch" android:background="@mipmap/search_small" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="13.0dip" />
+                <EditText android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:textColorHint="@color/text_color_light" android:id="@id/etSearch" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:hint="@string/yies_searchproduct_what" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionSearch" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rlCancel" android:layout_width="62.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/new_close" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yiersan.widget.CanScrollViewPager android:id="@id/vpSearchProduct" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="32.0dip" />
+            <RelativeLayout android:background="@drawable/home_down_shape" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <LinearLayout android:background="@color/colorWhite" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip">
+                    <com.yiersan.widget.SuitcasePagerSlidingTabStrip android:id="@id/pstsSearchProduct" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="32.0dip" app:pstsIndicatorColor="@color/main_primary" app:pstsUnderlineColor="@android:color/transparent" app:pstsDividerColor="@android:color/transparent" app:pstsIndicatorHeight="2.0dip" app:pstsTabPaddingLeftRight="0.0dip" app:pstsTabBackground="@android:color/transparent" app:pstsShouldExpand="true" app:pstsTextColor="@drawable/textview_home_tab" app:pstsTextSize="@dimen/text_size_13" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <ListView android:id="@id/lvSearch" android:background="@color/common_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_search_selector" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorLightblue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:background="@color/colorWhite" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvOid" android:layout_width="68.0dip" android:layout_height="wrap_content" android:text="@string/yies_order_number" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvOid" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/common_xian" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:id="@id/tvName" android:layout_width="68.0dip" android:layout_height="wrap_content" android:text="王宇" />
+                        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:id="@id/tvPhone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="18098767657" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:ellipsize="end" android:id="@id/tvCity" android:layout_width="wrap_content" android:layout_height="0.0dip" android:maxLines="1" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginRight="32.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:ellipsize="end" android:id="@id/tvAddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <ListView android:id="@id/lvDress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" />
+                </LinearLayout>
+                <RelativeLayout android:background="@color/colorWhite" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvTime" android:layout_width="103.0dip" android:layout_height="wrap_content" android:text="@string/yies_order_add_time" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvAddTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvTime" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/common_xian" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:background="@color/colorWhite" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvReserve" android:layout_width="103.0dip" android:layout_height="wrap_content" android:text="@string/yies_order_reservedate" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvReserveDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvReserve" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlRevert" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnRevert" android:background="@drawable/button_common_shape" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/yies_orderdetail_revert" android:layout_centerInParent="true" />
+        <Button android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/btnRevertDone" android:background="@drawable/button_service_shape" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/yies_usesuitcase_logistics_done" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

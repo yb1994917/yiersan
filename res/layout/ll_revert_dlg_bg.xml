@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <ImageView android:background="@mipmap/revert_dlg_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip" />
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_revert_dlg_what" />
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/text_color_deep" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/yies_revert_dlg_tip" android:lineSpacingMultiplier="1.4" />
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/main_secondary_one" android:id="@id/tvKnow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="32.0dip" android:text="@string/yies_revert_dlg_know" />
+    </LinearLayout>
+</LinearLayout>

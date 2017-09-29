@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlDress" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivPicture" android:layout_width="80.0dip" android:layout_height="100.0dip" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/ivPicture">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvProductName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="印花半裙" android:maxLines="1" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@id/tvBrandName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="CTT" android:maxLines="1" android:layout_below="@id/tvProductName" />
+        <RelativeLayout android:id="@id/rlSizeComment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/border_three" android:id="@id/tvSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S" android:layout_centerVertical="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/main_secondary_one" android:id="@id/tvComment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="去晒单" android:layout_toLeftOf="@id/ivGoldArrow" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/ivGoldArrow" android:background="@mipmap/gold_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

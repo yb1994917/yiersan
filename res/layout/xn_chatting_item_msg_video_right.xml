@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:imagecontrol="http://schemas.android.com/apk/com.xiaoneng.xnlibrary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_rvideo_sendtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sssss" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/chat_text_date_style" />
+-
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/tv_rvideo_sendtime">
+        <cn.xiaoneng.uiview.CustomImageView android:id="@id/iv_rvideo_userhead" android:focusable="false" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/visitor" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+-
+<RelativeLayout android:gravity="center|right" android:id="@id/i_tvideo_chatcc" android:background="@drawable/rt" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:minHeight="40.0dip" android:layout_toLeftOf="@id/iv_rvideo_userhead">
+            <ImageView android:id="@id/right_vv" android:layout_width="140.0dip" android:layout_height="200.0dip" android:scaleType="fitXY" />
+            <ImageView android:id="@id/right_status" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/video_play" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/i_tvideo_chatcc" android:layout_centerVertical="true">
+            <ProgressBar android:id="@id/pb_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@anim/progress_smallround" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+            <ImageView android:id="@id/iv_rvideo_false" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/upfalse" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

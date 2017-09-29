@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <RelativeLayout android:id="@id/rlWishClose" android:layout_width="54.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/arrow_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_deep" android:ellipsize="marquee" android:id="@id/tvWishlistName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_wishmove" android:maxLines="1" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_light" android:id="@id/tvWishlistSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/tvWishlistName" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yiersan.widget.LoadMoreRecycleView android:id="@id/rvWishlist" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/rlWishMoveEmpty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/ivWishMoveEmpty" android:background="@mipmap/collection_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="206.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="#33000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/yies_wishmove_empty" android:layout_below="@id/ivWishMoveEmpty" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="#a5000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/tvWishlistReset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/yies_wishmove_reset" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tvWishlistAddSize" android:background="@drawable/common_circle_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="30" android:layout_toLeftOf="@id/tvWishlistAdd" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/main_primary" android:id="@id/tvWishlistAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/yies_wishmove_add" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

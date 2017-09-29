@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/viewChang" android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <View android:id="@id/viewDuan" android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <include layout="@layout/ll_home_title" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rvSearchCollection" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" />
+</LinearLayout>

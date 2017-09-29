@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="8.0dip">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_instantrecord_nextstart" />
+                <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/text_black" android:id="@id/tvStartTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/yies_instantrecord_nextstart_time" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/common_xian" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="37.0dip" android:layout_marginBottom="39.0dip" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_instantrecord_nextprice" />
+                <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/text_black" android:id="@id/tvHowmuch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/yies_instantrecord_nextprice_howmuch" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="26.0dip" android:text="@string/yies_instantrecord_record" />
+    <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ListView android:id="@id/lvInstantRecord" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+            <RelativeLayout android:id="@id/rlInstantEmpty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/ivInstantEmpty" android:background="@mipmap/instantrecord_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:gravity="center" android:id="@id/tvInstantEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/yies_instantrecord_record_empty" android:lineSpacingMultiplier="1.2" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="58.0dip">
+            <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnInstantRefresh" android:background="@color/text_black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="14.0dip" android:text="@string/yies_instantrecord_pay" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

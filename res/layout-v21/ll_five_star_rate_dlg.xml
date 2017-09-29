@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ff333333" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38.0dip" android:text="去应用市场\n打赏一个五星好评吧" android:lineSpacingExtra="8.0sp" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="31.0dip" android:text="择日不如撞日，撞衫不如衣二三" android:lineSpacingExtra="8.0sp" android:letterSpacing="0.02" />
+</LinearLayout>

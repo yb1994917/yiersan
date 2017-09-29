@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llDress" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivDressPhoto" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="62.0dip">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:ellipsize="end" android:id="@id/tvDressProduct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="银色吊带大裙摆礼服" android:maxLines="1" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:ellipsize="end" android:id="@id/tvDressBrand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="ASOS" android:maxLines="1" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/main_secondary_one" android:ellipsize="end" android:id="@id/tvDressPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥369/4日" android:maxLines="1" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/border_three" android:ellipsize="end" android:id="@id/tvDressOriginalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

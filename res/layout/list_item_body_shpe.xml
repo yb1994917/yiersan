@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:background="@drawable/body_shape_border" android:layout_width="fill_parent" android:layout_height="233.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="233.0dip">
+        <ImageView android:id="@id/ivBody" android:layout_width="52.0dip" android:layout_height="153.0dip" android:layout_marginTop="14.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/colorBlack" android:gravity="center_horizontal" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="直筒型" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/tvDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="胸宽、腰宽、臀宽相差较少" android:lines="1" />
+    </LinearLayout>
+    <ImageView android:id="@id/ivCheck" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="10.0dip" android:src="@drawable/icon_body_shape_check_selector" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llRecordDetail" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="12.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivDress" android:layout_width="80.0dip" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="12.0dip" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_black" android:ellipsize="end" android:gravity="center|left|top" android:id="@id/tvProductName" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="JNBY" android:maxLines="2" android:layout_weight="2.0" />
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvBrandName" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:text="JNBY" android:maxLines="1" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:id="@id/tvSize" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:text="JNBY" android:maxLines="1" android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

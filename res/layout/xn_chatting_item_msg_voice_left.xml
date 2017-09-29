@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:imagecontrol="http://schemas.android.com/apk/com.xiaoneng.xnlibrary">
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_lv_sendtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sssss" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/chat_text_date_style" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="36.0dip" android:layout_below="@id/tv_lv_sendtime">
+        <cn.xiaoneng.uiview.CustomImageView android:id="@id/iv_lv_userhead" android:focusable="false" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/visitor" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/l_rl_voice_uname" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toRightOf="@id/iv_lv_userhead">
+            <TextView android:textColor="@color/xn_black" android:id="@id/l_voice_uname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2222" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center|left" android:id="@id/i_tv_chatccl" android:background="@drawable/l2" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:minHeight="40.0dip" android:layout_toRightOf="@id/iv_lv_userhead" android:layout_below="@id/l_rl_voice_uname">
+            <ImageView android:id="@id/iv_chatting_l" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/df3" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/l_voice_red" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/toast" android:layout_toRightOf="@id/i_tv_chatccl" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/xn_grey" android:gravity="center_vertical" android:id="@id/tv_length_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3'" android:layout_toRightOf="@id/i_tv_chatccl" />
+    </RelativeLayout>
+</RelativeLayout>

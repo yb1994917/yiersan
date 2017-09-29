@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <cn.xiaoneng.video.MovieRecorderView android:id="@id/movieRecorderView" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="#ffffffff" android:id="@id/textView_release_to_cancel" android:background="#99b31921" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:text="松开取消" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_bottom_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#ffffffff" android:id="@id/textView_up_to_cancel" android:background="#33000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="上移取消" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true">
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/button_bg_red" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginRight="5.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff707070" android:id="@id/textView_count_down" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ProgressBar android:id="@id/progressBar_loading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/progressbar_video" android:minHeight="5.0dip" style="@android:style/Widget.ProgressBar.Horizontal" />
+            <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/button_shoot" android:background="@drawable/video_press_bg" android:layout_width="90.0dip" android:layout_height="90.0dip" android:text="按住拍" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

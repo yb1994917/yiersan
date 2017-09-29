@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/viewChang" android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <View android:id="@id/viewDuan" android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" />
+    <include layout="@layout/ll_home_title" />
+    <LinearLayout android:id="@id/llLookPicture" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip">
+        <ImageView android:id="@id/ivLookPictureLeft" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_weight="1.0" />
+        <View android:layout_width="5.0dip" android:layout_height="5.0dip" />
+        <ImageView android:id="@id/ivLookPictureRight" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlLookInfo" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="24.0dip">
+        <RelativeLayout android:id="@id/rlLookPhoto" android:layout_width="32.0dip" android:layout_height="32.0dip">
+            <ImageView android:id="@id/ivLookPhoto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+            <com.yiersan.widget.CircleImageView android:id="@id/civLevel" android:layout_width="9.5dip" android:layout_height="9.5dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/rlLookPhoto">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_black" android:ellipsize="end" android:id="@id/tvLookName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_light" android:ellipsize="end" android:id="@id/tvLookInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/viewDivider" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+</LinearLayout>

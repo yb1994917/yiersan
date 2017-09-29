@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/viewXian" android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="57.0dip">
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="#ff111111" android:id="@id/tvHotTypeName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="23.0dip" android:text="@string/yies_clothes_hottype" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlDressType" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/llDressTypeGrid" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <GridView android:gravity="center" android:id="@id/gvDressTypeOne" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="12.0dip" android:verticalSpacing="8.0dip" />
+            <GridView android:gravity="center" android:id="@id/gvDressTypeTwo" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="12.0dip" android:verticalSpacing="8.0dip" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/rvDressType" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

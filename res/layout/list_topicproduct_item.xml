@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llProduct" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivProduct" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:ellipsize="end" android:id="@id/tvBrand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="COS" android:maxLines="1" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:ellipsize="end" android:id="@id/tvDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="豆沙色褶皱无袖连衣裙" android:maxLines="1" android:layout_below="@id/tvBrand" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

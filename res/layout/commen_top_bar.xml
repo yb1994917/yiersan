@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="49.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <RelativeLayout android:id="@id/rlLeft" android:paddingLeft="12.0dip" android:layout_width="60.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/ivLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.yiersan.widget.AlwaysMarqueeTextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:ellipsize="marquee" android:gravity="center" android:id="@id/tvTitle" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="衣二三" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+        <RelativeLayout android:id="@id/rlRight" android:paddingRight="12.0dip" android:layout_width="60.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/ivRight" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:id="@id/tvRight" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/topBarDivider" android:background="#12000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</LinearLayout>

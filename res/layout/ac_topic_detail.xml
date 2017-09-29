@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yiersan.widget.LoadMoreRecycleView android:id="@id/lmrTopic" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/tabHead" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/list_item_topic_detail_fix_head" />
+        <View android:background="@drawable/topic_detail_tab_bottom_line_shape" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/ivPublish" android:visibility="visible" android:layout_width="112.0dip" android:layout_height="64.0dip" android:src="@mipmap/icon_fabu_shaidan" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ivTop" android:background="@mipmap/top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+</FrameLayout>

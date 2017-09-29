@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/llWishTag" android:background="@drawable/wishtag_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="12.0dip">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_deep" android:id="@id/tvWishTagName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/ivWishTagClose" android:background="@mipmap/wishtag_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+    </LinearLayout>
+</LinearLayout>

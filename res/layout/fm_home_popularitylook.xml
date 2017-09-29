@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlRootView" android:background="@color/colorWhite" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipeNewLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yiersan.widget.LoadMoreRecycleView android:id="@id/lmrNew" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipeAttendLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yiersan.widget.LoadMoreRecycleView android:id="@id/lmrAttend" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include android:id="@id/tabLayout" android:visibility="gone" layout="@layout/popularity_look_head_tab_layout" />
+    <ImageView android:id="@id/ivPublish" android:visibility="gone" android:layout_width="112.0dip" android:layout_height="64.0dip" android:layout_marginBottom="57.799988dip" android:src="@mipmap/icon_fabu_shaidan" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/ivTop" android:background="@mipmap/top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

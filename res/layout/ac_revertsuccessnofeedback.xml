@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/border_five" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivPoint" android:background="@mipmap/orderfinish_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvSuccess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/yies_revertsuccess_success" android:layout_below="@id/ivPoint" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_gray" android:gravity="center" android:id="@id/tvTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/yies_revertsuccess_tip" android:layout_below="@id/tvSuccess" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.2" />
+    <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnSelect" android:background="@drawable/btn_box_main" android:layout_width="170.0dip" android:layout_height="38.0dip" android:layout_marginTop="53.0dip" android:text="@string/yies_orderfinish_go" android:layout_below="@id/tvTip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvGo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/yies_revertsuccess_go" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

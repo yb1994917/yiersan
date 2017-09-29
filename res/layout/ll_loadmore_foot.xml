@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/llFoot" android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/ivWait" android:background="@mipmap/jiazai" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tvWait" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="上拉加载更多" />
+            <ImageView android:id="@id/ivMore" android:background="@mipmap/productdetail_arrow" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="12.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/tvWait" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvCalendarDay" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/ivFlag" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginLeft="-6.0dip" android:layout_marginTop="-15.0dip" android:layout_toRightOf="@id/tvCalendarDay" android:layout_below="@id/tvCalendarDay" />
+</RelativeLayout>

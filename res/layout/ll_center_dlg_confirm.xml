@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/full_white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/btn_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_color_light" android:gravity="center" android:id="@id/cancel" android:background="@drawable/btn_white" android:layout_width="0.0dip" android:layout_height="36.0dip" android:text="@string/yies_no" android:layout_weight="1.0" />
+        <View android:layout_gravity="center_vertical" android:background="@color/text_color_light" android:layout_width="1.0dip" android:layout_height="12.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/pink_main" android:gravity="center" android:id="@id/confirm" android:background="@drawable/btn_white" android:layout_width="0.0dip" android:layout_height="36.0dip" android:text="@string/yies_yes" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

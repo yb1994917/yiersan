@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip">
+                <RelativeLayout android:id="@id/rlClose" android:layout_width="38.0dip" android:layout_height="fill_parent">
+                    <ImageView android:background="@mipmap/arrow_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llSwitch" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.yiersan.widget.UbuntuTextView android:textSize="28.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvSettingEN" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yies_setting_en" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:id="@id/tvSetting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/yies_setting" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llCompany" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="40.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_setting_company" android:layout_centerVertical="true" />
+                    <ImageView android:background="@mipmap/icon_gengduo" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llSysnfo" android:background="@drawable/size_line_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:id="@id/tvSysInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_setting_sysinfo" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:src="@mipmap/instant_new" android:layout_toRightOf="@id/tvSysInfo" android:layout_alignTop="@id/tvSysInfo" />
+                    <ImageView android:background="@mipmap/icon_gengduo" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:id="@id/vSysInfo" android:background="@color/border_one" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llSecret" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_setting_secret" android:layout_centerVertical="true" />
+                    <ImageView android:background="@mipmap/icon_gengduo" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llAdvice" android:background="@drawable/size_line_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_setting_advice" android:layout_centerVertical="true" />
+                    <ImageView android:background="@mipmap/icon_gengduo" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/border_one" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llClear" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_setting_clear" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:id="@id/tvClear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0M" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:background="@mipmap/icon_gengduo" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llClearWish" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_setting_clearwish" android:layout_centerVertical="true" />
+                    <ImageView android:background="@mipmap/icon_gengduo" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llVersion" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_setting_version" android:layout_centerVertical="true" />
+                    <ImageView android:background="@mipmap/icon_gengduo" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llCurrentVersion" android:background="@drawable/size_line_selector" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_setting_current_version" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:gravity="center_vertical" android:id="@id/tvCurrent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="86.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnLogin" android:background="@drawable/btn_box_main" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" android:text="@string/yies_setting_login" android:layout_alignParentBottom="true" />
+</RelativeLayout>

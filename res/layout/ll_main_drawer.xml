@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/llMainDrawer" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/svMainDrawer" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rlFilterReset" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+                <ImageView android:id="@id/ivFilterReset" android:background="@drawable/filter_reset_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/tvFilterReset" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_light" android:id="@id/tvFilterReset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_category_filter_reset" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:text="@string/yies_category_filter_size" />
+            <android.support.v7.widget.RecyclerView android:id="@id/rvFilterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="26.0dip" android:layout_marginBottom="24.0dip" />
+            <View android:background="@color/bg_four" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llFilterType" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rlFilterType" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="4.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_category_filter_type" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/ivFilterType" android:background="@mipmap/arrow_gray_down" android:layout_width="8.0dip" android:layout_height="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/rvFilterType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="24.0dip" />
+                <View android:background="@color/bg_four" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llFilterScene" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rlFilterScene" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="4.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_category_filter_scene" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/ivFilterScene" android:background="@mipmap/arrow_gray_down" android:layout_width="8.0dip" android:layout_height="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/rvFilterScene" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="24.0dip" />
+                <View android:background="@color/bg_four" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llFilterData" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rlFilterData" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="4.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_category_filter_data" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/ivFilterData" android:background="@mipmap/arrow_gray_down" android:layout_width="8.0dip" android:layout_height="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/rvFilterData" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="24.0dip" />
+                <View android:background="@color/bg_four" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llFilterColor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rlFilterColor" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="4.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_category_filter_color" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/ivFilterColor" android:background="@mipmap/arrow_gray_down" android:layout_width="8.0dip" android:layout_height="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/rvFilterColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="41.0dip" android:layout_marginBottom="24.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llFilterGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnSaveFilter" android:background="@drawable/btn_box_main" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/yies_category_filter_save" />
+</LinearLayout>

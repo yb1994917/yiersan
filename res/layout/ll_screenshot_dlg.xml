@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llScreenshot" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="36.0dip">
+            <ImageView android:id="@id/ivScreenshotClose" android:background="@mipmap/new_close" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ivScreenshot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="25.0dip" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/main_secondary_one" android:gravity="center" android:id="@id/tvScreenshotService" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/yies_screenshot_service" android:layout_weight="1.0" />
+            <View android:background="@color/border_one" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/main_secondary_one" android:gravity="center" android:id="@id/tvScreenshotShare" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/yies_screenshot_share" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

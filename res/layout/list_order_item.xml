@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="145.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvOid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_order_number" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvOid" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorOrange" android:id="@id/tvState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.yiersan.widget.InterceptLinearLayout android:layout_width="wrap_content" android:layout_height="85.0dip">
+        <com.yiersan.widget.HorizontalListView android:id="@id/lvPicture" android:layout_width="wrap_content" android:layout_height="85.0dip" android:layout_marginLeft="12.0dip" />
+    </com.yiersan.widget.InterceptLinearLayout>
+    <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_order_add" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvAddTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvDate" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

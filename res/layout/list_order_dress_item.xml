@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <ImageView android:id="@id/ivDress" android:layout_width="72.0dip" android:layout_height="90.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/ivDress">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/text_color_deep" android:gravity="bottom" android:id="@id/tvBrandName" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="JNBY" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:id="@id/tvProductName" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="JNBY" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_color_deep" android:gravity="top" android:id="@id/tvSize" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="JNBY" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:id="@id/viewXian" android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rlComment" android:layout_width="42.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/ivComment" android:background="@drawable/imageview_order_comment_bg_selector" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+                <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_light" android:id="@id/tvComment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/yies_order_want" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginLeft="11.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llSearch" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/ivSearch" android:background="@mipmap/search_small" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="13.0dip" />
+                <EditText android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:textColorHint="@color/text_color_light" android:id="@id/etSearch" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:hint="@string/yies_searchproduct_what" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionSearch" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rlCancel" android:layout_width="62.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/new_close" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="23.0dip">
+                <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/tvHotTag" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_light" android:id="@id/tvHotTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_searchproduct_hottag" android:layout_centerInParent="true" />
+                <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/tvHotTag" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.google.android.flexbox.FlexboxLayout android:layout_gravity="center_horizontal" android:id="@id/flHotTag" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="30.0dip" app:flexDirection="row" app:flexWrap="wrap" app:justifyContent="center" />
+        </LinearLayout>
+        <ListView android:id="@id/lvSearch" android:background="@color/common_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_search_selector" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+    </FrameLayout>
+</LinearLayout>

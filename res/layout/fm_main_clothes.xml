@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:paddingBottom="@dimen/card_view_main_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rlToolbar" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <RelativeLayout android:id="@id/rlSearch" android:layout_width="38.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/new_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.yiersan.widget.PagerSlidingTabStrip android:id="@id/pstsClothes" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_centerInParent="true" app:pstsIndicatorColor="@color/main_primary" app:pstsIndicatorLeftRightMargin="10.0dip" app:pstsUnderlineColor="@android:color/transparent" app:pstsDividerColor="@android:color/transparent" app:pstsIndicatorHeight="2.0dip" app:pstsTabPaddingLeftRight="20.0dip" app:pstsTabBackground="@android:color/transparent" app:pstsShouldExpand="true" app:pstsTextColor="@drawable/textview_home_tab" app:pstsTextSize="@dimen/text_size_default" />
+        <RelativeLayout android:id="@id/rlSuitcase" android:layout_width="38.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/ivSuitcase" android:background="@mipmap/new_suitcase" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="8.0sp" android:textColor="@color/text_deep" android:id="@id/tvBoxdownTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ivSuitcase" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.yiersan.widget.CanScrollViewPager android:id="@id/vpClothes" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

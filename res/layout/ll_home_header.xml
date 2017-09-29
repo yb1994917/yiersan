@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llHomeHeader" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.yiersan.widget.UbuntuTextView android:textSize="28.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvHomeSearchTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="10.0dip" />
+        <View android:id="@id/viewHomeSearchItem" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/llHomeSearchItem" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <GridView android:gravity="center" android:id="@id/gvHomeSearch" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="34.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="38.0dip" android:listSelector="@android:color/transparent" android:numColumns="4" />
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

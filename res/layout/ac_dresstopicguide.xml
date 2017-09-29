@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorBlack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llHand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/ivTip" android:background="@mipmap/wear_fit_tap_hidden" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llKnow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/ivNext" android:background="@mipmap/guide_next" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/tvNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/yies_homeguide_next" />
+    </LinearLayout>
+</RelativeLayout>

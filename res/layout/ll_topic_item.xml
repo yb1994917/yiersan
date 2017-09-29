@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="265.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="250.0dip">
+            <ImageView android:id="@id/ivTopic" android:layout_width="fill_parent" android:layout_height="250.0dip" android:scaleType="fitXY" />
+            <ImageView android:layout_gravity="bottom" android:background="@mipmap/sanjiao" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" />
+        </FrameLayout>
+        <View android:layout_width="fill_parent" android:layout_height="15.0dip" />
+        <HorizontalScrollView android:id="@id/hsvTopic" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="143.0dip" android:layout_marginTop="5.0dip">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.yiersan.widget.HorizontalListView android:id="@id/hlvTopic" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="143.0dip" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

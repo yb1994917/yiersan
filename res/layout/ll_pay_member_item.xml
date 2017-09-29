@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:id="@id/tvDescribe" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/border_three" android:gravity="center_vertical" android:id="@id/tvTagPirce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="￥499/月" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:id="@id/tvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="499.00" />
+        <Button android:id="@id/btnTaste" android:background="@drawable/button_pay_taste_selector" android:focusable="false" android:clickable="false" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

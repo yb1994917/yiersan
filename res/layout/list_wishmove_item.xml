@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="218.0dip">
+        <ImageView android:id="@id/ivPicture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <RelativeLayout android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/ivSelect" android:background="@drawable/brand_selector" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="9.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

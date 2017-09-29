@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llSenvePager" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivSenvePhoto" android:layout_width="fill_parent" android:layout_height="158.0dip" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@id/tvSenveTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:maxLines="1" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_light" android:ellipsize="end" android:id="@id/tvSenveTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" android:lineSpacingMultiplier="1.2" />
+</LinearLayout>

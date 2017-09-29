@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <RelativeLayout android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginTop="12.0dip">
+                    <ImageView android:id="@id/ivPhoto" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <com.yiersan.widget.CircleImageView android:id="@id/civLevel" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/ivCrown" android:layout_width="16.0dip" android:layout_height="14.0dip" android:layout_marginTop="1.0dip" android:src="@mipmap/crown" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginTop="25.0dip">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvName" android:layout_width="fill_parent" android:layout_height="0.0dip" android:maxLines="1" android:layout_weight="1.0" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_black" android:id="@id/tvTall" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <View android:layout_gravity="center_vertical" android:id="@id/view1" android:background="@color/common_xian" android:layout_width="1.0dip" android:layout_height="8.0dip" android:layout_marginLeft="5.5dip" android:layout_marginRight="5.5dip" />
+                            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_black" android:id="@id/tvSize" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <View android:layout_gravity="center_vertical" android:id="@id/view2" android:background="@color/common_xian" android:layout_width="1.0dip" android:layout_height="8.0dip" android:layout_marginLeft="5.5dip" android:layout_marginRight="5.5dip" />
+                            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_black" android:id="@id/tvSizeDone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rlLikeContainer" android:background="@drawable/shape_comment_like" android:layout_width="53.0dip" android:layout_height="27.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/ivBtnLike" android:background="@drawable/btn_like" android:layout_width="11.0dip" android:layout_height="11.0dip" />
+                            <TextView android:textSize="@dimen/text_size_10" android:textColor="@drawable/selector_comment_like" android:layout_gravity="center_vertical" android:id="@id/tvLikeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="10" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:id="@id/tvCommentTip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="35.0dip" android:lineSpacingMultiplier="1.4" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rcvPicture" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:overScrollMode="never" />
+        <View android:id="@id/viewCommentXian" android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="72.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="22.0dip" />
+    </LinearLayout>
+</LinearLayout>

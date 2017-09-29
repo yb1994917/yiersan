@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+        <TextView android:textSize="28.0sp" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yier_logistic_give_feedback_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_color_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/yier_logistic_give_feedback_subtile" />
+    </LinearLayout>
+    <RadioGroup android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="148.0dip">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <TextView android:textColor="@color/text_color_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yier_logistic_give_feedback_reason1" android:layout_toLeftOf="@id/radio_reason1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <RadioButton android:id="@id/radio_reason1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onRadioButtonClicked" android:buttonTint="@color/main_light_blue" />
+        </RelativeLayout>
+        <View android:background="@color/black06" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <TextView android:textColor="@color/text_color_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yier_logistic_give_feedback_reason2" android:layout_toLeftOf="@id/radio_reason2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <RadioButton android:id="@id/radio_reason2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onRadioButtonClicked" android:buttonTint="@color/main_light_blue" />
+        </RelativeLayout>
+        <View android:background="@color/black06" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <TextView android:textColor="@color/text_color_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yier_logistic_give_feedback_reason3" android:layout_toLeftOf="@id/radio_reason3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <RadioButton android:id="@id/radio_reason3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onRadioButtonClicked" android:buttonTint="@color/main_light_blue" />
+        </RelativeLayout>
+        <View android:background="@color/black06" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </RadioGroup>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/full_white" android:gravity="center" android:id="@id/submit_feedback" android:background="@drawable/btn_box_main" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/yier_logistic_give_feedback" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yiersan.widget.refresh.vertical.PMRefreshLayout android:id="@id/srlDress" android:layout_width="fill_parent" android:layout_height="fill_parent" app:pmrl_top="282.0dip">
+        <com.yiersan.widget.LoadMoreRecycleView android:id="@id/rvDress" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.yiersan.widget.refresh.vertical.PMRefreshLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llFilter" android:background="@color/colorWhite" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rvSize" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rvFirst" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rvSecond" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rvThree" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rvFouth" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/rlRentDate" android:layout_width="wrap_content" android:layout_height="44.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:text="@string/yies_dress_date" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="#33000000" android:id="@id/tvDressDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/yies_dress_date_select" android:layout_toLeftOf="@id/ivDressDate" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/ivDressDate" android:background="@mipmap/productdetail_arrow" android:layout_width="7.0dip" android:layout_height="13.0dip" android:layout_marginRight="26.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/rlFilterEmpty" android:background="@color/bg_one" android:clickable="true" android:layout_width="fill_parent" android:layout_height="800.0dip">
+            <ImageView android:id="@id/tvTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="66.0dip" android:src="@mipmap/hanger_record" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/border_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yies_category_empty" android:layout_below="@id/tvTag" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlFilterSelect" android:background="@color/colorWhite" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <android.support.v7.widget.RecyclerView android:id="@id/rvFilterSelect" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/rlFilterArrow" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:background="@mipmap/select_sanjiao_n" android:layout_width="10.0dip" android:layout_height="8.0dip" android:layout_marginRight="24.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.yiersan.widget.LoadingView android:layout_gravity="center" android:id="@id/lvWait" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ivTop" android:background="@mipmap/top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+</FrameLayout>

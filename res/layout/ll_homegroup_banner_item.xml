@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/viewChang" android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+        <View android:id="@id/viewDuan" android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llHomeTitleEN" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="12.0dip">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="#ff111111" android:ellipsize="end" android:id="@id/tvHomeTitleZH" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorBlack" android:id="@id/tvHomeMore" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/ivHomeMore" android:background="@mipmap/arrow_buy" android:layout_width="3.0dip" android:layout_height="6.0dip" android:layout_marginLeft="4.0dip" />
+        </LinearLayout>
+        <com.yiersan.widget.UbuntuTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_black" android:ellipsize="end" android:id="@id/tvHomeTitleEN" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="24.0dip" android:maxLines="1" app:textFont="1" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <View android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ivBanner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="22.0sp" android:textColor="@color/colorWhite" android:id="@id/tvCountDown" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

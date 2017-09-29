@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/llDress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="21.0dip">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip">
+                <ImageView android:id="@id/ivPicture" android:layout_width="62.399994dip" android:layout_height="78.0dip" android:scaleType="centerCrop" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="78.0dip" android:layout_marginLeft="14.599976dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvProductName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="印花半裙" android:maxLines="1" />
+                            </LinearLayout>
+                            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="top" android:id="@id/tvBrandName" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="CTT" android:maxLines="1" android:layout_weight="1.0" />
+                            <TextView android:textSize="14.0sp" android:textColor="#33000000" android:ellipsize="end" android:gravity="bottom" android:id="@id/tvSize" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="S" android:maxLines="1" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/llPrice" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <TextView android:textColor="@color/text_gray" android:gravity="right" android:layout_gravity="right" android:id="@id/tvBuyPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textColor="@color/text_super_light" android:gravity="right" android:layout_gravity="right" android:id="@id/tvOriginalPrice" android:background="@drawable/center_stroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                            <View android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="right" android:id="@id/tvComment" android:background="#ff9dbdcb" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="20.0dip" android:text="去晒单" android:maxLines="1" />
+                            <TextView android:textSize="@dimen/text_size_10" android:textColor="#ffcdcdcd" android:gravity="center" android:layout_gravity="right" android:id="@id/tvAlreadyComment" android:background="@color/border_one" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="20.0dip" android:text="已发表" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/vCommonXian" android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="21.0dip" />
+    </LinearLayout>
+</FrameLayout>

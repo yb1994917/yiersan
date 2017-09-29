@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:paddingBottom="@dimen/card_view_main_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlToolbar" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <RelativeLayout android:id="@id/rlWishPush" android:layout_width="54.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/wish_push_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_wish" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/rlSuitcase" android:layout_width="38.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/ivSuitcase" android:background="@mipmap/new_suitcase" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="8.0sp" android:textColor="@color/text_deep" android:id="@id/tvBoxdownTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ivSuitcase" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yiersan.widget.refresh.vertical.PMRefreshLayout android:id="@id/pmrlWish" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yiersan.widget.LoadMoreRecycleView android:id="@id/rvWish" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.yiersan.widget.refresh.vertical.PMRefreshLayout>
+        <com.yiersan.widget.LoadingView android:layout_gravity="center" android:id="@id/lvWishLoading" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ivTop" android:background="@mipmap/top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+    </FrameLayout>
+</LinearLayout>

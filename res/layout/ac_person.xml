@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <RelativeLayout android:id="@id/rlClose" android:layout_width="54.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@mipmap/arrow_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.yiersan.widget.UbuntuTextView android:textSize="28.0sp" android:textColor="@color/text_color_deep" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yies_person_en" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/yies_person_zh" />
+        <RelativeLayout android:id="@id/rlMePhoto" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip" android:layout_marginTop="34.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="@string/yies_person_photo" />
+            <ImageView android:id="@id/ivArrowPhoto" android:background="@mipmap/icon_gengduo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:id="@id/ivMePhoto" android:background="@mipmap/avatar" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginRight="13.0dip" android:layout_toLeftOf="@id/ivArrowPhoto" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" />
+        <RelativeLayout android:id="@id/rlMeNickname" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="@string/yies_person_nickname" />
+            <ImageView android:id="@id/ivNickname" android:background="@mipmap/icon_gengduo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:ellipsize="end" android:id="@id/tvMeNickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="13.0dip" android:maxLines="1" android:layout_toLeftOf="@id/ivNickname" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" />
+        <RelativeLayout android:id="@id/rlMePhone" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:id="@id/tv" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="@string/yies_person_phone" />
+            <ImageView android:id="@id/ivPhone" android:background="@mipmap/icon_gengduo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvPhone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginRight="13.0dip" android:maxLines="1" android:layout_toLeftOf="@id/ivPhone" />
+        </RelativeLayout>
+        <View android:background="@color/bg_four" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <RelativeLayout android:id="@id/rlMeWeight" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="@string/yies_person_me_weight" />
+            <ImageView android:id="@id/ivMeWeight" android:background="@mipmap/icon_gengduo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:id="@id/tvMeWeight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_toLeftOf="@id/ivMeWeight" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" />
+        <RelativeLayout android:id="@id/rlMeHeight" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="@string/yies_person_me_height" />
+            <ImageView android:id="@id/ivMeHeight" android:background="@mipmap/icon_gengduo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:id="@id/tvMeHeight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_toLeftOf="@id/ivMeHeight" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" />
+        <RelativeLayout android:id="@id/rlMeAcrossChest" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="@string/yies_person_me_acrossChest" />
+            <ImageView android:id="@id/ivMeAcrossChest" android:background="@mipmap/icon_gengduo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:id="@id/tvMeAcrossChest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_toLeftOf="@id/ivMeAcrossChest" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" />
+        <RelativeLayout android:id="@id/rlMeWaist" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="@string/yies_person_me_waist" />
+            <ImageView android:id="@id/ivMeWaist" android:background="@mipmap/icon_gengduo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:id="@id/tvMeWaist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_toLeftOf="@id/ivMeWaist" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" />
+        <RelativeLayout android:id="@id/rlMeHipline" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="@string/yies_person_me_hipline" />
+            <ImageView android:id="@id/ivMeHipline" android:background="@mipmap/icon_gengduo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:id="@id/tvMeHipline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_toLeftOf="@id/ivMeHipline" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" />
+        <RelativeLayout android:id="@id/rlMeFit" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="@string/yies_person_me_fit" />
+            <ImageView android:id="@id/ivMeFit" android:background="@mipmap/icon_gengduo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:id="@id/tvMeFit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_toLeftOf="@id/ivMeFit" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" />
+        <RelativeLayout android:id="@id/rlProfession" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="@string/yies_person_profession" />
+            <ImageView android:id="@id/ivProfession" android:background="@mipmap/icon_gengduo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:id="@id/tvProfession" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_toLeftOf="@id/ivProfession" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" />
+        <RelativeLayout android:id="@id/rlBirthday" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip" android:layout_marginBottom="30.0dip">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center_vertical" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="@string/yies_person_birthday" />
+            <ImageView android:id="@id/iv" android:background="@mipmap/icon_gengduo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:id="@id/tvBirthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_toLeftOf="@id/iv" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

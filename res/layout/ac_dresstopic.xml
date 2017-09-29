@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/vpDressTopic" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/rlMongolia" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:ellipsize="end" android:id="@id/tvDressTopicTip" android:background="@drawable/dresstopic_shape_bg" android:paddingLeft="23.0dip" android:paddingTop="120.0dip" android:paddingRight="23.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/yies_home_lable_content" android:maxLines="4" android:layout_alignParentBottom="true" android:lineSpacingMultiplier="1.4" />
+        <RelativeLayout android:id="@id/rlMongoliaTag" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlDressTopicTitle" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <RelativeLayout android:id="@id/rlDressTopicClose" android:layout_width="54.0dip" android:layout_height="fill_parent" android:layout_marginLeft="23.0dip">
+            <ImageView android:background="@mipmap/arrow_back_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="bottom" android:id="@id/pbProgress" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:progress="50" android:progressDrawable="@drawable/collection_progress_drawable" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <RelativeLayout android:id="@id/rlDressTopicGuide" android:background="#ac000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llHand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/ivTip" android:background="@mipmap/wear_fit_tap_hidden" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llKnow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/ivNext" android:background="@mipmap/guide_next" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/tvNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/yies_homeguide_next" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

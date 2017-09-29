@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llColor" android:paddingTop="10.0dip" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yiersan.widget.CircleImageView android:id="@id/ivColor" android:layout_width="24.0dip" android:layout_height="24.0dip" app:civ_border_width="1.0dip" app:civ_border_color="#ffb0e0e8" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <TextView android:textSize="@dimen/text_size_10" android:textColor="@drawable/type_text_selector" android:id="@id/tvColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="黑色" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <RelativeLayout android:id="@id/rlClose" android:layout_width="54.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <ImageView android:background="@mipmap/new_close" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="130.0dip">
+                <com.yiersan.widget.UbuntuTextView android:textSize="28.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvLoginEn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yies_login_login_en" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_color_light" android:id="@id/tvLoginZn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/yies_login_login" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:text="@string/yies_login_phone_number_you" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="10.0dip">
+                    <EditText android:textSize="@dimen/text_size_12" android:textColor="@drawable/login_edit_textcolor" android:textColorHint="#19000000" android:id="@id/etNumber" android:background="@drawable/login_edit_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/yies_login_phone_number" android:maxLength="11" android:layout_weight="1.0" android:inputType="number" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/yies_login_verification_code_receive" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <EditText android:textSize="@dimen/text_size_12" android:textColorHint="#19000000" android:id="@id/etCode" android:background="@drawable/login_edit_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/yies_login_verification_code" android:maxLength="6" android:layout_weight="1.0" android:inputType="number" />
+                    </LinearLayout>
+                    <Button android:textSize="@dimen/text_size_10" android:textColor="@color/text_black" android:layout_gravity="right" android:id="@id/btnGetCode" android:background="@drawable/login_shape" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="2.0dip" android:text="@string/yies_login_get_code" />
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip">
+        <Button android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:id="@id/btnLogin" android:background="@drawable/btn_box_main" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginBottom="12.0dip" android:text="@string/yies_login" />
+        <RelativeLayout android:id="@id/rlWeiXinLogin" android:background="@drawable/btn_productdetail_buy_shape" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginBottom="30.0dip">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:background="@mipmap/weixin_bind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/yies_login_weixin" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

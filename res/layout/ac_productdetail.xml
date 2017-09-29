@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <RelativeLayout android:id="@id/rlProductClose" android:layout_width="38.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@mipmap/arrow_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="9.0sp" android:textColor="@color/colorWhite" android:gravity="center_horizontal" android:id="@id/tvProductLevelName" android:background="@drawable/label_qs_shape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.yiersan.widget.AlwaysMarqueeTextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorBlack" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tvProductTitle" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="衣二三" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_light" android:layout_gravity="center_horizontal" android:id="@id/tvProductBrand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rlProductSuitcase" android:layout_width="38.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/ivSuitcase" android:background="@mipmap/new_suitcase" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_centerInParent="true" />
+                <TextView android:textSize="8.0sp" android:textColor="@color/text_deep" android:id="@id/tvBoxdownTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ivSuitcase" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/topBarDivider" android:background="#12000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.yiersan.widget.SlideDetailsLayout android:id="@id/slideDetailsLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:percent="0.2" app:duration="300" app:default_panel="front">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/llHeadViewContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </ScrollView>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/empty" android:background="@color/common_bg_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/tvClothesRecord2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/hanger_record" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_light" android:id="@id/empty_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="暂无相关单品推荐" android:layout_below="@id/tvClothesRecord2" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <include android:id="@id/llProductCommendHead" layout="@layout/ll_productdetail_recommend_head" />
+                <com.yiersan.widget.HeaderAndFooterRecycleView android:id="@id/rvProductDetail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.yiersan.widget.LoadingView android:id="@id/lvWaitRecommend" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </com.yiersan.widget.SlideDetailsLayout>
+        <com.yiersan.widget.HeaderAndFooterRecycleView android:id="@id/recyclerNoGoods" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.yiersan.widget.BubbleTextView android:textSize="12.0sp" android:textColor="@color/colorWhite" android:id="@id/bubbleAlreadyAddSuitCase" android:paddingLeft="20.0dip" android:paddingTop="8.0dip" android:paddingRight="20.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginRight="5.0dip" android:text="@string/yies_product_detail_already_add_suitcase" android:layout_alignBottom="@id/llTopLayout" android:layout_alignParentRight="true" android:lineSpacingExtra="6.0dip" app:btv_arrow_margin="-8.0dip" app:btv_arrow_direction="up" app:btv_arrow_height="6.0dip" app:btv_arrow_angle_degree="45.0" app:btv_x_size="8.0dip" app:btv_x_margin="10.0dip" app:btv_x_stroke_width="1.0dip" />
+</RelativeLayout>

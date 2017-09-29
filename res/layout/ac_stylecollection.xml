@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlStyleShow" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yiersan.widget.huxq17.swipecardsview.SwipeCardsView android:id="@id/scvStyleCollection" android:layout_width="fill_parent" android:layout_height="fill_parent" card:yOffsetStep="20.0dip" card:alphaOffsetStep="20" card:scaleOffsetStep="0.08" xmlns:card="http://schemas.android.com/apk/res-auto" />
+        <com.yiersan.widget.UbuntuTextView android:textSize="28.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvStyleEN" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="70.0dip" android:text="@string/yies_stylecollection_en" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="10.0dip" android:text="@string/yies_stylecollection_zh" android:layout_below="@id/tvStyleEN" />
+        <View android:id="@id/viewBottomXian" android:background="#19000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/rlStyleNO" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:background="@mipmap/new_close" android:layout_width="13.0dip" android:layout_height="13.0dip" />
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/yies_stylecollection_no" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="#33000000" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+            <RelativeLayout android:id="@id/rlStyleYes" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:background="@mipmap/heart_hilight" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/yies_stylecollection_yes" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlStyleClose" android:layout_width="54.0dip" android:layout_height="54.0dip">
+        <ImageView android:background="@mipmap/new_close" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="24.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlStyleSubmit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rlStyleClose" android:alpha="0.0">
+        <ViewFlipper android:id="@id/vfStyleFlipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/style_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:background="@mipmap/style_bg2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:background="@mipmap/style_bg3" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:background="@mipmap/style_bg4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </ViewFlipper>
+        <View android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.yiersan.widget.UbuntuTextView android:textSize="@dimen/text_size_18" android:textColor="@color/colorWhite" android:id="@id/tvStyleInit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_stylecollection_init" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:id="@id/tvStyleWait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yies_stylecollection_wait" android:layout_below="@id/tvStyleInit" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

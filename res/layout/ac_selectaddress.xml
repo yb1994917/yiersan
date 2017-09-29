@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:swipe="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/ivClose" android:background="@mipmap/arrow_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/main_primary" android:id="@id/tvAddAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_address_add" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.yiersan.widget.UbuntuTextView android:textSize="28.0sp" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yies_address_en" />
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/yies_address_zh" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip">
+        <com.yiersan.widget.swipemenu.SwipeMenuListView android:id="@id/lvAddress" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/border_one" android:dividerHeight="1.0dip" swipe:right_width="65.0dip" />
+        <RelativeLayout android:id="@id/rlEmpty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/ivEmpty" android:background="@mipmap/address_icon_x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/yies_address_empty" android:layout_below="@id/ivEmpty" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

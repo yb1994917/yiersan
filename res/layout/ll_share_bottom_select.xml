@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/llBottom" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlWeiXin" android:background="@drawable/rl_share_select" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:background="@mipmap/weixin_share" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/yies_share_weixin" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlMoments" android:background="@drawable/rl_share_select" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:background="@mipmap/weixin_friend" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/yies_share_weixin_friend" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlWeiBo" android:background="@drawable/rl_share_select" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:background="@mipmap/weibo" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/yies_share_weibo" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlRight" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/colorWhite" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="86.0dip">
+        <RelativeLayout android:id="@id/rlHeaderPersonPhoto" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginTop="12.0dip">
+            <ImageView android:id="@id/ivHeaderPersonPhoto" android:layout_width="54.0dip" android:layout_height="54.0dip" />
+            <com.yiersan.widget.CircleImageView android:id="@id/civLevel" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="-2.0dip" android:layout_marginTop="-2.0dip" android:src="@mipmap/ygirl" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="80.0dip" android:layout_toRightOf="@id/rlHeaderPersonPhoto">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_black" android:ellipsize="end" android:id="@id/tvHeaderPersonName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:maxLines="1" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_light" android:id="@id/tvHeaderFollowSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_personlook_follow_size" />
+                <View android:background="@color/bg_three" android:layout_width="1.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_light" android:id="@id/tvHeaderFollowGood" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_personlook_follow_good" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tvHeaderPersonFollow" android:background="@drawable/personlook_select" android:layout_width="76.0dip" android:layout_height="28.0dip" android:layout_marginTop="25.0dip" android:text="@string/yies_personlook_follow_yes" android:layout_alignParentRight="true" />
+        <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlHeaderEmpty" android:background="@color/bg_four" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/ivEmptyTag" android:background="@mipmap/person_look_empty" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="156.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="#33000000" android:id="@id/tvPersonLookEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/yies_personlook_empty" android:layout_below="@id/ivEmptyTag" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

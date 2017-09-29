@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yiersan.widget.FixedItemHeightListView android:id="@id/lvDressHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+    <View android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <RelativeLayout android:id="@id/rlDressRecommend" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="#ff111111" android:id="@id/tvAllProduct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="22.0dip" android:text="@string/yies_clothes_recommend" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/main_secondary_one" android:id="@id/tvDressCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/yies_wish_wish_on" android:layout_toLeftOf="@id/ivDressCheck" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ivDressCheck" android:background="@drawable/wishcheck_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlFilterEmpty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="500.0dip">
+        <ImageView android:id="@id/tvTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="66.0dip" android:src="@mipmap/filter_empty" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yies_category_empty" android:layout_below="@id/tvTag" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

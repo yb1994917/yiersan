@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llRootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/llStep" android:background="@mipmap/instant_step_bg1" android:layout_width="fill_parent" android:layout_height="29.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llStep1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_light" android:id="@id/tvStep1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_instant_step1_title" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llStep2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_light" android:id="@id/tvStep2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_instant_step2_title" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llStep3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_light" android:id="@id/tvStep3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_instant_step3_title" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/llStepThree" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/llThreeTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="24.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvThreeEn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_instant_step3_titleen" />
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/yies_instant_step3_title" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llThreePhoneNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="48.0dip">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_instant_step3_phone" />
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvThreePhoneNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rlThreeCode" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="35.0dip">
+                <android.support.design.widget.TextInputLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:hintTextAppearance="@style/TILStyle">
+                    <EditText android:textSize="@dimen/text_size_12" android:id="@id/etThreeCode" android:background="@drawable/login_edit_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/yies_login_verification_code" android:maxLines="1" android:maxLength="15" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+                <Button android:textSize="@dimen/text_size_10" android:textColor="@drawable/button_get_code_text_selector" android:id="@id/btnThreeGetCode" android:background="@drawable/common_bg_shape1" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/yies_login_get_code" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/llThreeNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" android:layout_above="@id/btnThreeGo" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_deep" android:id="@id/tvThreeNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_instant_step3_notice" />
+                    <View android:id="@id/viewThreeSelect" android:background="@drawable/view_step3_check_select" android:layout_width="12.0dip" android:layout_height="12.0dip" />
+                </LinearLayout>
+                <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnThreeGo" android:background="@drawable/btn_instant_bg_select" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="13.0dip" android:text="@string/yies_instant_step3_submit" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llStepTwo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/llTwoTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="24.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvTwoEn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_instant_step2_titleen" />
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/yies_instant_step2_title" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rlTwoPassword" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="35.0dip">
+                <android.support.design.widget.TextInputLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:hintTextAppearance="@style/TILStyle">
+                    <EditText android:textSize="@dimen/text_size_12" android:id="@id/etTwoPassword" android:background="@drawable/login_edit_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/yies_instant_step2_password" android:maxLines="1" android:maxLength="20" android:layout_weight="1.0" android:inputType="textPassword" android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageView android:id="@id/ivTwoPasswordCheck" android:background="@drawable/instant_check_bg_select" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_toLeftOf="@id/rlTwoPasswordEye" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/rlTwoPasswordEye" android:layout_width="35.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/ivTwoPasswordEye" android:background="@drawable/instant_eye_select" android:layout_width="15.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlTwoAgainPassword" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="35.0dip">
+                <android.support.design.widget.TextInputLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:hintTextAppearance="@style/TILStyle">
+                    <EditText android:textSize="@dimen/text_size_12" android:id="@id/etTwoAgainPassword" android:background="@drawable/login_edit_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/yies_instant_step2_againpassword" android:maxLines="1" android:maxLength="20" android:layout_weight="1.0" android:inputType="textPassword" android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageView android:id="@id/ivTwoAgainPasswordCheck" android:background="@drawable/instant_check_bg_select" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_toLeftOf="@id/rlTwoAgainPasswordEye" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/rlTwoAgainPasswordEye" android:layout_width="35.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/ivTwoAgainPasswordEye" android:background="@drawable/instant_eye_select" android:layout_width="15.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:id="@id/llTwoNotice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip">
+                <RelativeLayout android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip">
+                    <ImageView android:background="@mipmap/instant_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_deep" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/yies_instant_step2_notice" android:maxLines="1" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnTwoNext" android:background="@drawable/btn_instant_bg_select" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="13.0dip" android:text="@string/yies_instant_step2_next" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llStepOne" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="24.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvOneEn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="32.0dip" android:text="@string/yies_instant_step1_titleen" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="3.0dip" android:text="@string/yies_instant_step1_title" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="35.0dip">
+                <android.support.design.widget.TextInputLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:hintTextAppearance="@style/TILStyle">
+                    <com.yiersan.widget.BandCardEditText android:textSize="@dimen/text_size_12" android:id="@id/etOneCardNo" android:background="@drawable/login_edit_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/yies_instant_step1_cardno" android:maxLines="1" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageView android:id="@id/ivOneCardNoCheck" android:background="@drawable/instant_check_bg_select" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="35.0dip">
+                <android.support.design.widget.TextInputLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:hintTextAppearance="@style/TILStyle">
+                    <EditText android:textSize="@dimen/text_size_12" android:id="@id/etOneCardName" android:background="@drawable/login_edit_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/yies_instant_step1_cardname" android:maxLines="1" android:layout_weight="1.0" android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageView android:id="@id/ivOneCardNameCheck" android:background="@drawable/instant_check_bg_select" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="35.0dip">
+                <android.support.design.widget.TextInputLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:hintTextAppearance="@style/TILStyle">
+                    <EditText android:textSize="@dimen/text_size_12" android:id="@id/etOneCardID" android:background="@drawable/login_edit_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/yies_instant_step1_cardid" android:maxLines="1" android:maxLength="25" android:layout_weight="1.0" android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageView android:id="@id/ivOneCardIDCheck" android:background="@drawable/instant_check_bg_select" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="35.0dip">
+                <android.support.design.widget.TextInputLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:hintTextAppearance="@style/TILStyle">
+                    <EditText android:textSize="@dimen/text_size_12" android:id="@id/etOneCardPhone" android:background="@drawable/login_edit_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/yies_instant_step1_cardphone" android:maxLines="1" android:maxLength="11" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageView android:id="@id/ivOneCardPhoneCheck" android:background="@drawable/instant_check_bg_select" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip">
+                <RelativeLayout android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip">
+                    <ImageView android:background="@mipmap/instant_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_deep" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/yies_instant_step1_cardnotice" android:maxLines="2" android:lineSpacingMultiplier="1.2" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnOneNext" android:background="@drawable/btn_instant_bg_select" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="13.0dip" android:text="@string/yies_instant_step1_next" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

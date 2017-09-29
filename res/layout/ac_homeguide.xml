@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yiersan.widget.RippleSpreadView android:layout_gravity="right" android:id="@id/rsvSuitcase" android:layout_width="120.0dip" android:layout_height="120.0dip" app:rsv_gravity="1" />
+    <ImageView android:layout_gravity="right" android:background="@mipmap/guide_suitcase" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="19.0dip" />
+    <ImageView android:layout_gravity="right" android:id="@id/ivGuideSuitcase" android:background="@mipmap/guide_suitcase_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/llNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip">
+        <ImageView android:id="@id/ivNext" android:background="@mipmap/guide_next" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/tvNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/yies_homeguide_next" />
+    </LinearLayout>
+</FrameLayout>

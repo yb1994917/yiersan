@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/xn_centercontent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sdk_chat_top" android:background="@color/xn_sdk_head_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0sp" android:textColor="@color/xn_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/tv_chat_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/xn_chatpage_kfname" android:maxEms="7" android:singleLine="true" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/rl_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@id/sdk_chat_finsh" android:layout_width="24.0dip" android:layout_height="34.0dip" android:src="@drawable/chat_headback" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/xn_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xn_chatpage_back1" android:layout_toRightOf="@id/sdk_chat_finsh" android:layout_alignBottom="@id/chat_username" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/over_chat" android:background="@drawable/over" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ProgressBar android:id="@id/pb_requestkf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@anim/progress_smallround" android:layout_toLeftOf="@id/tv_chat_username" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+    </RelativeLayout>
+    <cn.xiaoneng.uiview.XNListView android:id="@id/chatListView" android:background="@color/xn_centercontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector" android:transcriptMode="normal" android:divider="@null" android:layout_above="@id/view01" android:layout_below="@id/fl_showgoods" android:overScrollMode="never" />
+    <View android:id="@id/view01" android:background="@color/xn_edge" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/fl_chat" />
+    <FrameLayout android:id="@id/fl_chat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/xn_custom_facerelativelayout" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/leave_sf" android:background="@color/xn_tips" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_below="@id/sdk_chat_top">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/xn_red" android:id="@id/fk_s" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/fl_tip2" android:background="@color/xn_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/sdk_chat_top">
+        <RelativeLayout android:id="@id/rl_zhj" android:background="#fffff6ca" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/sdk_chat_top">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/tv_zhuanjie" android:background="@drawable/invite_switch" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="14.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/xn_black" android:id="@id/tv_tips2" android:clickable="false" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="客服 张宁宁将 访客转接给您，是否接收该对话" android:layout_toRightOf="@id/tv_zhuanjie" android:layout_centerVertical="true" />
+                <Button android:id="@id/bt_refuse" android:background="@drawable/reject_btn" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_marginRight="64.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <Button android:id="@id/bt_accept" android:background="@drawable/accept_btn" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_marginRight="15.0dip" android:layout_alignBaseline="@id/bt_refuse" android:layout_alignBottom="@id/bt_refuse" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/fl_tip_black" android:background="@color/xn_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/sdk_chat_top">
+        <RelativeLayout android:id="@id/rl_zhj" android:background="#fffff6ca" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/sdk_chat_top">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="@color/xn_black" android:id="@id/tv_tips3" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/xn_chatpage_blacklist" android:layout_toRightOf="@id/tv_zhuanjie" android:layout_centerVertical="true" />
+                <Button android:gravity="center" android:id="@id/bt_release" android:background="@drawable/black_release" android:layout_width="50.0dip" android:layout_height="25.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/fl_showgoods" android:background="@drawable/goods_relative" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="0.0dip" android:layout_below="@id/sdk_chat_top">
+        <include android:background="@color/xn_bg_goods" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/xn_showgoods" />
+    </RelativeLayout>
+</RelativeLayout>

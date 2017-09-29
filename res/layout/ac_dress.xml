@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <RelativeLayout android:id="@id/rlClose" android:layout_width="38.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/arrow_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llFrame" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvFrame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_suitcase_frame" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/ivFrameArrow" android:background="@mipmap/select_sanjiao_n" android:layout_width="8.0dip" android:layout_height="4.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/tvFrame" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rlSuitcase" android:layout_width="38.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/ivSuitcase" android:background="@mipmap/new_suitcase" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="8.0sp" android:textColor="@color/text_deep" android:id="@id/tvBoxdownTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ivSuitcase" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/flCategory" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yiersan.widget.refresh.vertical.PMRefreshLayout android:id="@id/srlCategory" android:layout_width="fill_parent" android:layout_height="fill_parent" app:pmrl_top="222.5dip">
+            <com.yiersan.widget.LoadMoreRecycleView android:id="@id/rvCategory" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.yiersan.widget.refresh.vertical.PMRefreshLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llOutSide" android:background="#7d000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/llFilter" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView android:id="@id/rvSize" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+            <View android:background="#0c000000" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <android.support.v7.widget.RecyclerView android:id="@id/rvFirstRow" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+            <View android:background="#0c000000" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <android.support.v7.widget.RecyclerView android:id="@id/rvSecondRow" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+            <View android:background="#0c000000" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <android.support.v7.widget.RecyclerView android:id="@id/rvFourthRow" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+            <View android:id="@id/viewFourthRow" android:background="#0c000000" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <android.support.v7.widget.RecyclerView android:id="@id/rvThirdRow" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+            <View android:background="#0c000000" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rlFilterEmpty" android:background="@color/bg_one" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="222.5dip">
+            <ImageView android:id="@id/tvTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="66.0dip" android:src="@mipmap/filter_empty" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yies_category_empty" android:layout_below="@id/tvTag" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rlFilterSelect" android:background="@color/colorWhite" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <android.support.v7.widget.RecyclerView android:id="@id/rvFilterSelect" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/rlFilterArrow" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@mipmap/select_sanjiao_n" android:layout_width="10.0dip" android:layout_height="8.0dip" android:layout_marginRight="24.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:id="@id/llAddFrame" android:background="@color/colorWhite" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@id/lvFrame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+        </LinearLayout>
+        <com.yiersan.widget.LoadingView android:layout_gravity="center" android:id="@id/lvDressWait" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ivTop" android:background="@mipmap/top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+    </FrameLayout>
+</LinearLayout>

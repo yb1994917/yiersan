@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/item" android:layout_width="fill_parent" android:layout_height="160.0dip">
+        <ImageView android:id="@id/ivBg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <View android:id="@id/cover" android:background="@color/black20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="160.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="3.0dip" android:layout_above="@id/llSubTitle" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="18.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/text_color_deep" android:id="@id/tvSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+            <ImageView android:background="@mipmap/buy_arrow" android:layout_width="5.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <com.yiersan.widget.timerflipper.CountDownView android:id="@id/cdvTimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="69.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

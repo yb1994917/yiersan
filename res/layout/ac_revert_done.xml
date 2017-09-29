@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/llRevertAgain">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:background="@color/colorBlack" android:layout_width="fill_parent" android:layout_height="85.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/colorWhite" android:ellipsize="end" android:id="@id/top_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/yies_revert_done_tip" android:maxLines="3" android:lineSpacingMultiplier="1.2" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rlDeliveryTime" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip">
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_revert_time" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorBlack" android:id="@id/tvDeliveryTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016.05.09 15:00-17:00" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="107.0dip">
+                <RelativeLayout android:id="@id/rlAddAddress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:text="@string/yies_createorder_add_address" android:layout_centerVertical="true" />
+                    <ImageView android:background="@mipmap/icon_gengduo" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginRight="24.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rlAddress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_centerInParent="true">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_black" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="王宇" />
+                            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:id="@id/tvPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="18001297668" android:layout_toRightOf="@id/tvName" />
+                            <ImageView android:background="@mipmap/icon_gengduo" android:visibility="invisible" android:layout_width="6.0dip" android:layout_height="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_light" android:id="@id/tvCity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="北京市 丰台区" android:layout_centerVertical="true" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_light" android:id="@id/tvAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="七里庄东大街西里小区1号楼2单元601" android:layout_below="@id/tvCity" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip">
+                <ImageView android:id="@id/ivExpressLogo" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_black" android:id="@id/tvExpressName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_weight="1.0" />
+                <View android:background="@color/bg_three" android:layout_width="0.8000001dip" android:layout_height="35.0dip" />
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/main_primary" android:gravity="center" android:id="@id/tvServiceExpress" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/yies_revert_express" />
+            </LinearLayout>
+            <View android:background="@color/border_five" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="54.0dip" android:layout_marginLeft="24.0dip" android:text="@string/yies_revert_return_product" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="#ff3d6d89" android:id="@id/tvDesc" android:background="#ffeff4f7" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/yies_revert_return_tip" android:lineSpacingMultiplier="1.4" />
+            <com.yiersan.widget.FixedItemHeightListView android:id="@id/lvProduct" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="#1a000000" android:dividerHeight="1.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/llRevertAgain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/full_white" android:gravity="center" android:id="@id/reserveAgain" android:background="@drawable/btn_box_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/yier_reserve_again" />
+    </LinearLayout>
+</RelativeLayout>

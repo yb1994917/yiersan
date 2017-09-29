@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_bigpicture" android:background="@color/xn_black" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/wv_biggif" android:focusable="true" android:visibility="gone" android:scrollbars="none" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:overScrollMode="never" />
+    <ImageView android:id="@id/show_image_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/pic_icon" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_pic_bottom" android:background="@color/xn_white" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/xn_black" android:gravity="center" android:id="@id/tv_pic_back" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="6.0dip" android:text="@string/xn_myimage_back" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/xn_black" android:gravity="center" android:id="@id/tv_stolocal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/xn_myimage_savelocal" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

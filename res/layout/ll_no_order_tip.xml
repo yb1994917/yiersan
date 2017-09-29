@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/ll_back_suticase_shape" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llContent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="13.0sp" android:textColor="@color/text_color_deep" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tvTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/yies_suitcase_no_order_tip" android:maxLines="3" android:lineSpacingMultiplier="1.2" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="15.0dip">
+            <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnBackSuitcase" android:background="@drawable/button_orderfinish_go_shape" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:text="@string/yies_suitcase_back_suitcase" android:layout_weight="3.0" />
+            <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnCheckRecord" android:background="@drawable/button_common_shape" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:text="@string/yies_suitcase_check_clothes_record" android:layout_weight="5.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

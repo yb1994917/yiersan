@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#fff3f8fb" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center" android:id="@id/tvClose" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:text="@string/yies_person_close" />
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center" android:id="@id/tvOK" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="@string/yies_person_ok" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RadioGroup android:orientation="vertical" android:id="@id/rgGroup" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="224.0dip">
+        <RadioButton android:textSize="@dimen/text_size_default" android:textColor="@drawable/radiobutton_text_default_size_selector" android:gravity="center" android:layout_gravity="center" android:id="@id/rbDongCheng" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="44.0dip" android:button="@null" android:text="@string/yies_address_dongcheng" />
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioButton android:textSize="@dimen/text_size_default" android:textColor="@drawable/radiobutton_text_default_size_selector" android:gravity="center" android:layout_gravity="center" android:id="@id/rbChongWen" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="44.0dip" android:button="@null" android:text="@string/yies_address_chongwen" />
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioButton android:textSize="@dimen/text_size_default" android:textColor="@drawable/radiobutton_text_default_size_selector" android:gravity="center" android:layout_gravity="center" android:id="@id/rbXiCheng" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="44.0dip" android:button="@null" android:text="@string/yies_address_xicheng" />
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioButton android:textSize="@dimen/text_size_default" android:textColor="@drawable/radiobutton_text_default_size_selector" android:gravity="center" android:layout_gravity="center" android:id="@id/rbXuanWu" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="44.0dip" android:button="@null" android:text="@string/yies_address_xuanwu" />
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioButton android:textSize="@dimen/text_size_default" android:textColor="@drawable/radiobutton_text_default_size_selector" android:gravity="center" android:layout_gravity="center" android:id="@id/rbChaoYang" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="44.0dip" android:button="@null" android:text="@string/yies_address_chaoyang" />
+    </RadioGroup>
+</LinearLayout>

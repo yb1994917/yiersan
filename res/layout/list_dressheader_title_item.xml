@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/bg_four" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <RelativeLayout android:id="@id/rlDressRecommend" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="12.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="#ff111111" android:id="@id/tvAllProduct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:text="@string/yies_clothes_recommend" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_black" android:id="@id/tvDressCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/yies_wish_wish_on" android:layout_toLeftOf="@id/ivDressCheck" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ivDressCheck" android:background="@drawable/wishcheck_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#19000000" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rvSize" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+    <View android:background="#0c000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rvFirstRow" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+    <View android:id="@id/viewFirstRow" android:background="#0c000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rvSecondRow" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+    <View android:id="@id/viewSecondRow" android:background="#0c000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rvThirdRow" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+    <View android:id="@id/viewThirdRow" android:background="#0c000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rvFourthRow" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+    <View android:id="@id/viewFourthRow" android:background="#0c000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip" />
+    <RelativeLayout android:id="@id/rlFilterAll" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/main_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_clothes_filter_all" />
+            <ImageView android:background="@mipmap/filter_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#19000000" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginBottom="8.0dip" />
+    <RelativeLayout android:id="@id/rlFilterEmpty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="450.0dip">
+        <ImageView android:id="@id/tvTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="66.0dip" android:src="@mipmap/filter_empty" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_light" android:id="@id/tvCategoryEmptyTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yies_category_empty" android:layout_below="@id/tvTag" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

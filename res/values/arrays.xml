@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="yies_delete_wish">
+        <item>删除心愿单</item>
+    </string-array>
+    <string-array name="yies_home">
+        <item>推荐</item>
+        <item>LOOK</item>
+        <item>品牌</item>
+        <item>专题</item>
+    </string-array>
+    <string-array name="yies_main">
+        <item>首页</item>
+        <item>选衣</item>
+        <item>心愿</item>
+        <item>可买</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="yies_photo_select">
+        <item>拍照</item>
+        <item>相册</item>
+    </string-array>
+    <string-array name="yies_searchproduct">
+        <item>时装/配饰</item>
+        <item>礼服</item>
+    </string-array>
+    <string-array name="yies_suitcase">
+        <item>全部衣箱</item>
+        <item>待签收</item>
+        <item>待归还</item>
+        <item>礼服订单</item>
+    </string-array>
+    <string-array name="yies_tabpoint">
+        <item>home</item>
+        <item>listpage</item>
+        <item>favor</item>
+        <item>canbuy</item>
+        <item>mine</item>
+    </string-array>
+</resources>

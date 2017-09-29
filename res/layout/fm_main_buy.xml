@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:paddingBottom="@dimen/card_view_main_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlToolbar" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_buy" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/rlSuitcase" android:layout_width="38.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/ivSuitcase" android:background="@mipmap/new_suitcase" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="8.0sp" android:textColor="@color/text_deep" android:id="@id/tvBoxdownTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ivSuitcase" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/srlBuy" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/lvBuy" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="1.0dip" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <RelativeLayout android:id="@id/rlEmpty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yiersan.widget.ResizableImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/buy_empty" android:scaleType="centerCrop" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_deep" android:id="@id/tvEmptyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="@string/yies_buy_empty_title" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:gravity="center" android:id="@id/tvEmptyTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/yies_buy_empty_tip" android:layout_below="@id/tvEmptyTitle" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.4" />
+            <Button android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_gray" android:id="@id/btnBuy" android:background="@drawable/btn_productdetail_buy_shape" android:layout_width="172.0dip" android:layout_height="44.0dip" android:layout_marginTop="30.0dip" android:text="@string/yies_buy_empty_buy" android:layout_below="@id/tvEmptyTip" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

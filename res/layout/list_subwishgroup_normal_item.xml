@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/llSubWishName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="12.0dip">
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="30.0dip" android:layout_height="wrap_content">
+                <View android:background="@drawable/common_circle_shape" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginLeft="12.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="#ff111111" android:layout_gravity="center_vertical" android:id="@id/tvSubWishName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_light" android:layout_gravity="bottom" android:id="@id/tvSubWishSize" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="1.0" />
+            <RelativeLayout android:id="@id/rlSubWishAdd" android:layout_width="30.0dip" android:layout_height="fill_parent">
+                <ImageView android:background="@mipmap/wish_jia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.google.android.flexbox.FlexboxLayout android:id="@id/flSubWishProduct" android:background="@drawable/btn_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_below="@id/llSubWishName" app:flexDirection="row" app:flexWrap="nowrap" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="24.0dip" android:layout_below="@id/flSubWishProduct" />
+    </RelativeLayout>
+</LinearLayout>

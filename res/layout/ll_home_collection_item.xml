@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/viewChang" android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <View android:id="@id/viewDuan" android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" />
+    <include layout="@layout/ll_home_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:id="@id/rvCollection" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" />
+        <com.lijinshan.bezier.BezierView android:id="@id/bivCollection" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_alignTop="@id/rvCollection" android:layout_alignBottom="@id/rvCollection" android:layout_alignParentRight="true" app:biv_fill_color="@color/border_one" app:biv_text_color="@color/text_gray" app:biv_text_offset="4.0dip" app:biv_text_size="@dimen/text_size_12" app:biv_drag_direction="right" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.yiersan" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <permission android:name="com.yiersan.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.yiersan.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <application android:allowBackup="false" android:icon="@mipmap/logo" android:label="@string/app_name" android:largeHeap="true" android:name="com.yiersan.core.SampleApplication" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:launchMode="singleTask" android:name="com.yiersan.ui.activity.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.yiersan.test.PhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.CropActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.PersonActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.AddressActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.EditAddressActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.yiersan.ui.activity.CouponActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.yiersan.ui.activity.SelectCouponActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.yiersan.ui.activity.CommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.yiersan.ui.activity.PayActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.PaySuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:label="commonwvactivity" android:launchMode="singleTop" android:name="com.yiersan.ui.activity.CommonWVActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.PayRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.OrderFinishActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.CreateOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SelectAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.yiersan.wxapi.WXPayEntryActivity"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.yiersan.wxapi.WXEntryActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.yiersan.ui.activity.WelcomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="yi23app"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="www.yi23.net"/>
+                <data android:host="www.95vintage.com"/>
+                <data android:scheme="http"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yiersan.ui.activity.ProductDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.BuyClothesActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.yiersan.ui.activity.SuitcaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.RevertActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.LogisticsInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.RevertDoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.ImageViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.LedActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.yiersan.ui.activity.CollectFlipActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.PopMainActivity" android:screenOrientation="portrait" android:theme="@style/PopMainTheme"/>
+        <activity android:name="com.yiersan.ui.activity.BindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.yiersan.ui.activity.FirstUseLedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.OpenSuitcaseLedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.BrandActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.yiersan.ui.activity.RevertSuccessActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.yiersan.ui.activity.RevertSuccessNoFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.ProductCommentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SearchProductActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SelectPictureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SearchProductResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.yiersan.ui.activity.InstantActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.InstantRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.InstantSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.InstantCardGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.InstantResetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.InstantPayFinishAcitivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.InstantQuestionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.TopicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.MeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.BaseInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.PayAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.LogisticFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.BuyClothesAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.DressDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.DressCreateOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.DressAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.DressOrderFinishActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SearchGownResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.yiersan.ui.activity.HomePageGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.HomeGuideActivity" android:screenOrientation="portrait" android:theme="@style/GuideTheme"/>
+        <activity android:name="com.yiersan.ui.activity.DressTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.DressTopicGuideActivity" android:screenOrientation="portrait" android:theme="@style/GuideTheme"/>
+        <activity android:name="com.yiersan.ui.activity.FollowBrandActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.DressActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.ShortListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.CreateWishActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.WishActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.AddOtherWishActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.WishMoveActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.AddWishTagActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.WishTagDetailActivity" android:screenOrientation="portrait" android:theme="@style/WishGuideTheme"/>
+        <activity android:name="com.yiersan.ui.activity.WishGuideTagActivity" android:screenOrientation="portrait" android:theme="@style/GuideTheme"/>
+        <activity android:name="com.yiersan.ui.activity.WishGuideProductActivity" android:screenOrientation="portrait" android:theme="@style/GuideTheme"/>
+        <activity android:name="com.yiersan.ui.activity.SellProductActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SysInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.ClothesChangeRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.MemberGownDepositActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.WelcomeVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.DressShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.BrandHallActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.BindPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.PopularityLookActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.ImageLightBoxViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.NotificationCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.PersonLookActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.NotificationDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.TopicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SelectCityActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SuitProductListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SuitProductSaleInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SuitProductSalePaySuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.SizeInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.yiersan.ui.activity.BodyInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yiersan.ui.activity.DatePauseCalendarActivity" android:screenOrientation="portrait" android:theme="@style/DatePauseTheme"/>
+        <activity android:name="com.yiersan.ui.activity.StyleCollectionActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.yiersan.ui.service.UpdateUserErrorService"/>
+        <service android:exported="false" android:name="com.yiersan.other.tinker.SampleResultService"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <provider android:authorities="com.yiersan.android7.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.DownloadService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.yiersan.ui.receive.JPushReceive">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.yiersan"/>
+            </intent-filter>
+        </receiver>
+        <activity android:launchMode="singleTask" android:name="cn.xiaoneng.activity.ChatActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="cn.xiaoneng.activity.LeaveMsgActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:launchMode="singleTask" android:name="cn.xiaoneng.activity.ShowCameraActivity" android:screenOrientation="portrait" android:theme="@style/MyDialogTopRight"/>
+        <activity android:name="cn.xiaoneng.activity.ShowAlbumActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="cn.xiaoneng.activity.ValuationActivity" android:screenOrientation="portrait" android:theme="@style/valuationdialog"/>
+        <activity android:launchMode="singleTask" android:name="cn.xiaoneng.activity.ShowPictureActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="cn.xiaoneng.activity.XNExplorerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="cn.xiaoneng.video.VideoPreviewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="cn.xiaoneng.video.RecordVideoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="cn.xiaoneng.video.XNVideoPlayer" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <meta-data android:name="WEIBO_APPKEY" android:value="1996350222"/>
+        <meta-data android:name="WEIBO_CHANNEL" android:value="weibo"/>
+        <meta-data android:name="RELEASE_TIME" android:value="2017-09-12 17:06:23"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.AndroidId" android:value="true"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="e10b5349053cfecfb6d74357921368a5"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.TinkerPatchService" android:process=":patch"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService" android:process=":patch"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.sina.weibo.sdk.share.WbShareTransActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.yiersan.SensorsDataContentProvider" android:enabled="true" android:exported="false" android:name="com.sensorsdata.analytics.android.sdk.SensorsDataContentProvider"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.MainProcessName" android:value="com.yiersan"/>
+        <activity android:exported="false" android:name="cn.jpush.android.ui.PopWinActivity" android:theme="@style/MyDialogStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.yiersan"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushService" android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="cn.jpush.android.service.DaemonService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.yiersan"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.yiersan"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.AlarmReceiver"/>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="62d19ac6b2c956af283429a6"/>
+        <meta-data android:name="TINKER_ID" android:value="tinker_id_975ab203cda1887a0ebd919a728309f52ec307b5"/>
+    </application>
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_ri_sendtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sssss" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/chat_text_date_style" />
+    <RelativeLayout android:id="@id/rl_01" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="36.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/tv_ri_sendtime">
+        <cn.xiaoneng.uiview.CustomImageView android:id="@id/iv_ri_userhead" android:focusable="false" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/visitor" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/i_tv_chatimage" android:background="@drawable/rt" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/pic_icon" android:adjustViewBounds="true" android:minWidth="100.0dip" android:minHeight="190.0dip" android:layout_toLeftOf="@id/iv_ri_userhead" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/rl_iv_pb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/i_tv_chatimage" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_ri_falsei" android:visibility="invisible" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/upfalse" android:layout_centerInParent="true" />
+            <ProgressBar android:id="@id/pb_imagei" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@anim/progress_smallround" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+        </RelativeLayout>
+        <ImageView android:id="@id/r_chatemo" android:background="@drawable/rt" android:focusable="true" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="40.0dip" android:scaleType="fitStart" android:layout_toLeftOf="@id/iv_ri_userhead" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</RelativeLayout>

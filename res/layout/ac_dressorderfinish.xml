@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivPoint" android:background="@mipmap/order_finish_bg" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="83.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvSuccess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:text="@string/yies_orderfinish_success" android:layout_below="@id/ivPoint" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_gray" android:gravity="center" android:id="@id/tvTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/yies_orderfinish_tip1" android:layout_below="@id/tvSuccess" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.2" />
+    <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnPay" android:background="@color/main_secondary_one" android:layout_width="170.0dip" android:layout_height="38.0dip" android:layout_marginTop="53.0dip" android:text="@string/yies_orderfinish_pay" android:layout_below="@id/tvTip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvGo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/yies_orderfinish_go" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

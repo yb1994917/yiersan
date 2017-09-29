@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yiersan.widget.LoadMoreRecycleView android:id="@id/rvBrand" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llHeaderTitle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rlBrandTitle" android:clickable="true" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <RelativeLayout android:id="@id/rlBrandClose" android:layout_width="54.0dip" android:layout_height="fill_parent" android:layout_marginLeft="23.0dip">
+                <ImageView android:id="@id/ivBrandArrowBack" android:background="@mipmap/arrow_back_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvBrandTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llSecondBrandTitle" android:background="@color/colorWhite" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <android.support.v7.widget.RecyclerView android:id="@id/rvSecondBrandSize" android:layout_width="fill_parent" android:layout_height="49.0dip" />
+            <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <android.support.v7.widget.RecyclerView android:id="@id/rvSecondBrandType" android:layout_width="fill_parent" android:layout_height="49.0dip" />
+            <View android:id="@id/viewSecondBrandType" android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.yiersan.widget.LoadingView android:layout_gravity="center" android:id="@id/lvBrandWait" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ivTop" android:background="@mipmap/top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+</FrameLayout>

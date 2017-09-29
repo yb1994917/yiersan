@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yiersan.widget.refresh.vertical.PMRefreshLayout android:id="@id/pmrlDress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yiersan.widget.LoadMoreRecycleView android:id="@id/rvDress" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.yiersan.widget.refresh.vertical.PMRefreshLayout>
+    <RelativeLayout android:id="@id/rlFilterSelect" android:background="@drawable/home_down_shape" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <LinearLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <android.support.v7.widget.RecyclerView android:id="@id/rvFilterSelect" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/rlFilterArrow" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <ImageView android:background="@mipmap/filter_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ivTop" android:background="@mipmap/top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+    <com.yiersan.widget.LoadingView android:layout_gravity="center" android:id="@id/lvLoading" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+</FrameLayout>

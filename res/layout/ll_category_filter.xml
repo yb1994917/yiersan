@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/llFilter" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="#fffafafa" android:layout_width="102.0dip" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rlFilterType" android:background="@drawable/filter_bg_selector" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@drawable/filter_text_selector" android:id="@id/tvFilterType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_category_filter_type" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/ivFilterType" android:background="@drawable/category_filter_circle_shape" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginRight="9.0dip" android:layout_toLeftOf="@id/tvFilterType" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlFilterBrand" android:background="@drawable/filter_bg_selector" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@drawable/filter_text_selector" android:id="@id/tvFilterBrand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_category_filter_brand" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/ivFilterBrand" android:background="@drawable/category_filter_circle_shape" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginRight="9.0dip" android:layout_toLeftOf="@id/tvFilterBrand" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlFilterScene" android:background="@drawable/filter_bg_selector" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@drawable/filter_text_selector" android:id="@id/tvFilterScene" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_category_filter_scene" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/ivFilterScene" android:background="@drawable/category_filter_circle_shape" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginRight="9.0dip" android:layout_toLeftOf="@id/tvFilterScene" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlFilterColor" android:background="@drawable/filter_bg_selector" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@drawable/filter_text_selector" android:id="@id/tvFilterColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_category_filter_color" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/ivFilterColor" android:background="@drawable/category_filter_circle_shape" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginRight="9.0dip" android:layout_toLeftOf="@id/tvFilterColor" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/flFilterContent" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnFilterSubmit" android:background="#ffff5454" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="13.0dip" android:text="@string/yies_category_yes" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:custom="http://schemas.android.com/apk/com.cropimage">
+    <com.cropimage.library.CropImageView android:id="@id/crop_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:cropimage_ratioWidth="1" custom:cropimage_ratioHeight="1" custom:cropimage_frameColor="#99000000" />
+    <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:layout_gravity="bottom|center" android:id="@id/btnOk" android:background="@drawable/button_common_shape" android:layout_width="110.0dip" android:layout_height="44.0dip" android:layout_marginBottom="30.0dip" android:text="@string/yies_yes" />
+</FrameLayout>

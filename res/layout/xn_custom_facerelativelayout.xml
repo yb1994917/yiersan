@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaoneng.uiview.FaceRelativeLayout android:id="@id/FaceRelativeLayout" android:background="@color/xn_function_bg" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/xn_edge" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <RelativeLayout android:id="@id/oo" android:background="@color/xn_function_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ooo">
+        <RelativeLayout android:id="@id/rl_001" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_marginBottom="2.0dip" android:layout_alignBottom="@id/rl_et_sendmessage">
+            <ImageButton android:id="@id/btn_voice" android:background="@drawable/btnvoice1" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="6.0dip" android:layout_marginBottom="2.0dip" android:scaleType="fitXY" />
+            <RelativeLayout android:gravity="center_horizontal" android:id="@id/rl_robot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                <ImageView android:id="@id/ib_robot" android:background="@drawable/robot_selector" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="2.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/xn_gray" android:id="@id/ib_roberttext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xn_swifttorobot" android:layout_below="@id/ib_robot" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_et_sendmessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn_face" android:layout_toRightOf="@id/rl_001">
+            <cn.xiaoneng.uiview.FaceEditText android:textSize="15.0sp" android:textColor="@color/xn_black" android:id="@id/et_sendmessage" android:background="@drawable/record1" android:paddingLeft="6.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="4" android:singleLine="true" android:inputType="textMultiLine" android:textCursorDrawable="@null" />
+            <Button android:textSize="18.0sp" android:textColor="@color/xn_press_text" android:gravity="center" android:id="@id/btn_record" android:background="@drawable/recordselector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="41.0dip" android:layout_marginLeft="6.0dip" android:text="@string/xn_sdk_presstalk" android:layout_alignBottom="@id/et_sendmessage" />
+        </RelativeLayout>
+        <ImageButton android:id="@id/btn_face" android:background="@drawable/emo" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="4.0dip" android:scaleType="fitXY" android:layout_alignBottom="@id/rl_et_sendmessage" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ooo" android:background="@color/xn_function_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:layout_alignBottom="@id/oo" android:layout_alignParentRight="true">
+        <ImageButton android:id="@id/btn_plus" android:background="@drawable/moreselector" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitXY" android:layout_alignBottom="@id/oo" android:layout_centerHorizontal="true" />
+        <Button android:textColor="@color/xn_white" android:id="@id/btn_send" android:background="@drawable/send_bt" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="@string/xn_custom_send" android:layout_alignTop="@id/btn_plus" android:layout_alignBottom="@id/oo" />
+    </RelativeLayout>
+    <View android:id="@id/view02" android:background="@color/xn_edge" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="9.0dip" android:layout_below="@id/oo" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/ll_facechoose" android:background="@color/xn_function_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="126.0dip" android:layout_below="@id/view02">
+        <cn.xiaoneng.uiview.MyViewPager android:id="@id/vp_contains" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/iv_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</cn.xiaoneng.uiview.FaceRelativeLayout>

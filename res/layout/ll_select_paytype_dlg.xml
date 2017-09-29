@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <RelativeLayout android:id="@id/rlWeiXin" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:background="@mipmap/wechat" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/yies_pay_weixin" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/common_xian" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="23.0dip" android:layout_marginBottom="23.0dip" />
+        <RelativeLayout android:id="@id/rlAli" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:background="@mipmap/alipay" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/yies_pay_ali" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

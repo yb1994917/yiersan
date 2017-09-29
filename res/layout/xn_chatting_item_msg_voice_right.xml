@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:imagecontrol="http://schemas.android.com/apk/com.xiaoneng.xnlibrary">
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_rv_sendtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sssss" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/chat_text_date_style" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/tv_rv_sendtime">
+        <cn.xiaoneng.uiview.CustomImageView android:id="@id/iv_rv_userhead" android:focusable="false" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/visitor" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <RelativeLayout android:gravity="center|right" android:id="@id/i_tv_chatcc" android:background="@drawable/chatto_bg" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="4.0dip" android:minHeight="40.0dip" android:layout_toLeftOf="@id/iv_rv_userhead">
+            <ImageView android:id="@id/iv_chatting_r" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qz" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/r_voice_red" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/toast" android:layout_toLeftOf="@id/i_tv_chatcc" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/xn_grey" android:gravity="center_vertical" android:id="@id/tv_length_r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3'" android:layout_toLeftOf="@id/i_tv_chatcc" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tv_length_r" android:layout_centerVertical="true">
+            <ProgressBar android:id="@id/pb_voice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@anim/progress_smallround" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+            <ImageView android:id="@id/iv_rv_false" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/upfalse" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llBrandHeader" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="180.0dip">
+        <ImageView android:id="@id/ivHeaderPhoto" android:background="@mipmap/seat_brand_header" android:layout_width="fill_parent" android:layout_height="180.0dip" android:scaleType="fitXY" />
+        <Button android:textSize="13.0sp" android:textColor="@color/colorWhite" android:id="@id/btnHeaderFollow" android:background="@drawable/brand_follow_bg" android:layout_width="118.0dip" android:layout_height="32.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/colorWhite" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="12.0dip">
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorBlack" android:id="@id/tvBrandName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CTT" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/main_secondary_one" android:gravity="center" android:id="@id/tvBrandTag" android:background="@drawable/brand_tag_shape" android:paddingLeft="8.0dip" android:paddingTop="1.0dip" android:paddingRight="8.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_toRightOf="@id/tvBrandName" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.yiersan.widget.expandabletextview.ExpandableTextView android:id="@id/tvBrandDetail" android:background="@color/colorWhite" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" expandableTextView:maxCollapsedLines="3" expandableTextView:animDuration="200"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:expandableTextView="http://schemas.android.com/apk/res-auto">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/expandable_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.4" />
+        <ImageButton android:layout_gravity="bottom|center|right" android:id="@id/expand_collapse" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.yiersan.widget.expandabletextview.ExpandableTextView>
+    <View android:id="@id/viewBrandLink" android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="23.0dip" />
+    <RelativeLayout android:id="@id/rlBrandLink" android:background="@color/colorWhite" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="#ff4a90e2" android:id="@id/tvBrandUrl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="www.me-city.com" android:layout_centerVertical="true" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rvBrandIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llBrandTitle" android:tag="headertitle" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:id="@id/rvBrandSize" android:layout_width="fill_parent" android:layout_height="49.0dip" />
+        <View android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rvBrandType" android:layout_width="fill_parent" android:layout_height="49.0dip" />
+        <View android:id="@id/viewBrandType" android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlHeaderEmpty" android:background="@color/colorWhite" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="400.0dip">
+        <ImageView android:id="@id/tvTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="66.0dip" android:src="@mipmap/hanger_record" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yies_category_empty" android:layout_below="@id/tvTag" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

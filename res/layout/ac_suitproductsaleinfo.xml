@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <RelativeLayout android:id="@id/rlSaleLeft" android:paddingLeft="12.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/arrow_back" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <com.yiersan.widget.AlwaysMarqueeTextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorBlack" android:ellipsize="marquee" android:gravity="center" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/yies_suit_product_sale_buy" android:scrollHorizontally="true" android:singleLine="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llHowToReceiveGood" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_suit_product_sale_how_to_receive_goods" />
+                    <ImageView android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="2.0dip" android:src="@mipmap/icon_question" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@id/topBarDivider" android:background="#12000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+        <ScrollView android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/llSuitProduct1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="12.199982dip">
+                    <ImageView android:id="@id/ivSuitProduct1" android:background="@color/common_bg_light" android:layout_width="63.399994dip" android:layout_height="78.79999dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.599976dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@id/tvProductName1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:lineSpacingExtra="5.0sp" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/tvBrandEnName1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lines="1" android:lineSpacingExtra="7.0sp" />
+                        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@id/tvSuitSize1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:lines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:id="@id/view_divider" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/llSuitProduct2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="17.0dip">
+                    <ImageView android:id="@id/ivSuitProduct2" android:background="@color/common_bg_light" android:layout_width="63.399994dip" android:layout_height="78.79999dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.599976dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@id/tvProductName2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:lineSpacingExtra="5.0sp" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/tvBrandEnName2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lines="1" android:lineSpacingExtra="7.0sp" />
+                        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@id/tvSuitSize2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:lines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <android.support.v7.widget.RecyclerView android:id="@id/rcSaleInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llCoupon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_me_coupon" />
+                    <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llSelectCoupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffcccccc" android:gravity="end" android:id="@id/tvCoupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_suit_product_sale_choose_coupon" />
+                        <ImageView android:background="@mipmap/icon_gengduo" android:layout_width="4.0dip" android:layout_height="7.5dip" android:layout_marginLeft="5.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#19000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="14.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="26.0dip">
+                    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_pay_real" />
+                    <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/colorBlack" android:gravity="end" android:id="@id/tvTotalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:gravity="end" android:layout_gravity="right" android:id="@id/tvSavePrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="26.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tvBuy" android:background="@color/main_primary" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" android:layout_marginBottom="17.0dip" android:text="@string/yies_suit_product_buy" />
+</FrameLayout>

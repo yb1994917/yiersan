@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivBuy" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/rlTime" android:background="@color/colorBlack" android:layout_width="188.0dip" android:layout_height="18.0dip" android:layout_above="@id/rlNormalTip">
+        <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/colorWhite" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/rlNormalTip" android:background="@color/colorWhite" android:layout_width="188.0dip" android:layout_height="64.0dip" android:layout_marginBottom="18.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="4.0dip" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="#ff111111" android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <TextView android:textSize="@dimen/text_size_10" android:textColor="#ff444444" android:ellipsize="end" android:id="@id/tvSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <View android:id="@id/viewXian" android:background="#ff444444" android:layout_width="1.0dip" android:layout_height="10.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+                <TextView android:textSize="@dimen/text_size_10" android:textColor="#ff444444" android:ellipsize="end" android:id="@id/tvRightSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/rlSneakpeekTip" android:layout_width="188.0dip" android:layout_height="82.0dip" android:layout_marginBottom="18.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/main_secondary_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:text="COMMING SOON" android:layout_alignParentTop="true" android:layout_marginStart="24.0dip" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="#49000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="18.0dip">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/colorWhite" android:ellipsize="end" android:id="@id/tvSneakpeekTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="4.0dip" android:maxLines="1" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="2.0dip" android:layout_below="@id/tvSneakpeekTitle">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:ellipsize="end" android:id="@id/tvSneakpeekSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ivPush" android:background="@drawable/buy_push_selector" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="22.0dip" />
+</FrameLayout>

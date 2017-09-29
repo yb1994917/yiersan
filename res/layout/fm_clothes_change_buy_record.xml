@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/common_bg_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yiersan.widget.LoadMoreRecycleView android:id="@id/rvClothesChangeRecord" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" />
+    <RelativeLayout android:id="@id/empty2" android:background="@color/common_bg_light" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/tvClothesRecord2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="116.0dip" android:src="@mipmap/hanger_record" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_light" android:id="@id/empty_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/yier_no_record2" android:layout_below="@id/tvClothesRecord2" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

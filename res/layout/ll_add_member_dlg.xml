@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/colorTab" android:layout_width="fill_parent" android:layout_height="115.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="115.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_color_deep" android:gravity="center" android:id="@id/tvKnow" android:layout_width="125.0dip" android:layout_height="30.0dip" android:layout_marginLeft="40.0dip" android:text="@string/yies_add_member_learn" android:layout_centerVertical="true" />
+        <Button android:textSize="14.0sp" android:textColor="@color/text_color_deep" android:id="@id/btnAddMember" android:background="@drawable/button_service_shape" android:layout_width="125.0dip" android:layout_height="30.0dip" android:layout_marginRight="40.0dip" android:text="@string/yies_add_member" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

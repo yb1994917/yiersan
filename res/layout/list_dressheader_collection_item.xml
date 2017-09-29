@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/viewXian" android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="57.0dip">
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="#ff111111" android:id="@id/tvCollectionName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="23.0dip" android:text="@string/yies_clothes_hottype" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/rvDressCollection" android:background="@color/colorWhite" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="72.0dip" />
+    <View android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+</LinearLayout>

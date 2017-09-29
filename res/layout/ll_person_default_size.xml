@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#fff3f8fb" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center" android:id="@id/tvClose" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:text="@string/yies_person_close" />
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:gravity="center" android:id="@id/tvOK" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="@string/yies_person_ok" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RadioGroup android:orientation="vertical" android:id="@id/rgGroup" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="269.0dip">
+        <RadioButton android:textSize="@dimen/text_size_default" android:textColor="@drawable/radiobutton_text_default_size_selector" android:gravity="center" android:id="@id/rbSizeXS" android:layout_width="fill_parent" android:layout_height="44.0dip" android:button="@null" android:text="@string/yies_text_size_xs" />
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioButton android:textSize="@dimen/text_size_default" android:textColor="@drawable/radiobutton_text_default_size_selector" android:gravity="center" android:id="@id/rbSizeS" android:layout_width="fill_parent" android:layout_height="44.0dip" android:button="@null" android:text="@string/yies_text_size_s" />
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioButton android:textSize="@dimen/text_size_default" android:textColor="@drawable/radiobutton_text_default_size_selector" android:gravity="center" android:id="@id/rbSizeM" android:layout_width="fill_parent" android:layout_height="44.0dip" android:button="@null" android:text="@string/yies_text_size_m" />
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioButton android:textSize="@dimen/text_size_default" android:textColor="@drawable/radiobutton_text_default_size_selector" android:gravity="center" android:id="@id/rbSizeL" android:layout_width="fill_parent" android:layout_height="44.0dip" android:button="@null" android:text="@string/yies_text_size_l" />
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioButton android:textSize="@dimen/text_size_default" android:textColor="@drawable/radiobutton_text_default_size_selector" android:gravity="center" android:id="@id/rbSizeXL" android:layout_width="fill_parent" android:layout_height="44.0dip" android:button="@null" android:text="@string/yies_text_size_xl" />
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioButton android:textSize="@dimen/text_size_default" android:textColor="@drawable/radiobutton_text_default_size_selector" android:gravity="center" android:id="@id/rbSizeF" android:layout_width="fill_parent" android:layout_height="44.0dip" android:button="@null" android:text="@string/yies_text_size_f" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llContent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/svContent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/llClick" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="175.0dip" android:layout_height="218.0dip" android:layout_marginTop="73.0dip">
+                    <ImageView android:id="@id/ivTagWish" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <RelativeLayout android:id="@id/rlTagWishSelect" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true">
+                        <ImageView android:id="@id/ivTagWishSelect" android:background="@drawable/wish_selector" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <com.google.android.flexbox.FlexboxLayout android:id="@id/flWishTagDetail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" app:flexDirection="row" app:flexWrap="wrap" app:justifyContent="center" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/colorWhite" android:layout_gravity="center_horizontal" android:id="@id/tvWishAddTag" android:background="@drawable/wishtagdetail_add_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/yies_wishtagdetail_add" />
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:layout_gravity="center_horizontal" android:id="@id/tvDone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/yies_done" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:layout_gravity="center" android:id="@id/tvLoadFailure" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_wishtagdetail_failure" />
+    <com.yiersan.widget.LoadingView android:layout_gravity="center" android:id="@id/lvTagWait" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+</FrameLayout>

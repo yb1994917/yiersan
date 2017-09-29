@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="6.0dip">
+        <View android:background="#19000000" android:layout_width="13.0dip" android:layout_height="1.0dip" />
+        <TextView android:textSize="@dimen/text_size_10" android:textColor="#ffcccccc" android:gravity="center_horizontal" android:id="@id/tvTimeLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+        <View android:background="#19000000" android:layout_width="13.0dip" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivTopic" android:layout_width="fill_parent" android:layout_height="157.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:src="@color/common_bg_light" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorBlack" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvTopic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="18.0dip" android:lines="1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/dlMainDrawer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/flMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yiersan.widget.MainCanScrollViewPager android:id="@id/vpMain" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:layout_gravity="bottom" android:id="@id/rlTabStrip" android:background="@drawable/home_shape" android:layout_width="fill_parent" android:layout_height="58.0dip">
+                <com.yiersan.widget.MainPagerSlidingTabStrip android:id="@id/pstsMain" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_alignParentBottom="true" app:pstsShouldExpand="true" app:pstsTextColor="@drawable/main_tab_text" app:pstsTextSize="@dimen/text_size_10" />
+            </RelativeLayout>
+        </FrameLayout>
+        <com.yiersan.widget.BubbleTextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:layout_gravity="bottom" android:id="@id/btvSuitcaseTip" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_main_suitcase_tip" app:btv_arrow_margin="-35.0dip" app:btv_arrow_direction="down" app:btv_arrow_height="6.0dip" app:btv_arrow_angle_degree="45.0" app:btv_x_size="8.0dip" app:btv_x_margin="10.0dip" app:btv_x_center_horizontal="true" app:btv_x_stroke_width="1.0dip" />
+        <include android:id="@id/viewBottomTip" android:visibility="gone" layout="@layout/ll_bottom_tip" />
+    </FrameLayout>
+    <include layout="@layout/ll_main_drawer" />
+</android.support.v4.widget.DrawerLayout>

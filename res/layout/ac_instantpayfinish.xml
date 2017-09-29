@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/ivInstantState" android:background="@mipmap/instant_payfinish_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/text_color_deep" android:id="@id/tvInstantTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/yies_instantpayfinish_success_title" />
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_gray" android:gravity="center" android:id="@id/tvInstantTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="30.0dip" android:text="@string/yies_instantpayfinish_success_tip" />
+            <Button android:textSize="@dimen/text_size_default" android:textColor="@color/colorWhite" android:id="@id/btnInstantSubmit" android:background="@color/common_red" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="96.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="96.0dip" android:text="@string/yies_instantpayfinish_success_submit" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:id="@id/tvInstantGo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/yies_instantpayfinish_error2_service" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

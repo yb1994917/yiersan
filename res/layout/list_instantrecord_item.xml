@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="99.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_deep" android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:ellipsize="end" android:id="@id/tvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentRight="true" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/text_color_light" android:ellipsize="end" android:id="@id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/common_xian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

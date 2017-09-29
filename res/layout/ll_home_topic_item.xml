@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/viewChang" android:background="@color/bg_one" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <View android:id="@id/viewDuan" android:background="@color/border_one" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" />
+    <include layout="@layout/ll_home_title" />
+    <RelativeLayout android:id="@id/rlTopic" android:layout_width="fill_parent" android:layout_height="94.0dip">
+        <ImageView android:id="@id/ivTopicPicture" android:background="@color/bg_four" android:layout_width="94.0dip" android:layout_height="94.0dip" android:layout_marginLeft="24.0dip" android:scaleType="centerCrop" />
+        <RelativeLayout android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/ivTopicPicture">
+            <TextView android:textSize="@dimen/text_size_default" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@id/tvTopicTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_light" android:ellipsize="end" android:id="@id/tvTopicTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:layout_above="@id/tvTopicNotice" android:layout_below="@id/tvTopicTitle" android:lineSpacingMultiplier="1.2" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/main_primary" android:ellipsize="end" android:id="@id/tvTopicNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/viewDivider" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+</LinearLayout>

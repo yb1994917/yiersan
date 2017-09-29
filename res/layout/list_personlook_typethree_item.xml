@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llPersonLookContainer" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_black" android:ellipsize="end" android:id="@id/tvPersonShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/yies_personlook_share" android:maxLines="1" android:layout_toLeftOf="@id/tvPersonTime" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/border_three" android:id="@id/tvPersonTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yies_personlook_time" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_black" android:id="@id/tvPersonComment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:lineSpacingMultiplier="1.4" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <ImageView android:id="@id/ivPersonShare" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="56.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+            <RelativeLayout android:layout_gravity="bottom|center" android:id="@id/rlLikeContainer" android:background="@mipmap/btn_popu_look_like_bg" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginBottom="23.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/llBtnLike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/btn_like2" />
+                    <TextView android:textColor="@drawable/selector_comment_like" android:layout_gravity="center_horizontal" android:id="@id/tvLikeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="0" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
